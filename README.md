@@ -1,6 +1,6 @@
 # elevue-note
 
-> a note base on electron
+> A note base on electron-vue, this project is not ready.
 
 #### Build Setup
 
