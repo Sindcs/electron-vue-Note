@@ -1,0 +1,103 @@
+﻿/*kindeditor  commment*/
+
+/*ul与ol显示问题*/
+.kindeditordefault ul{margin-left:1.5em;}
+.kindeditordefault ol{margin-left:1.5em;}
+.kindeditordefault ul li{list-style-type:disc;}
+.kindeditordefault ol li{list-style-type:decimal;}
+/*字体样式*/
+.kindeditordefault {
+    font-weight:normal !important;white-space: normal !important;
+}
+/*恢复h1-h6样式*/
+.kindeditordefault h1,
+.kindeditordefault h2,
+.kindeditordefault h3,
+.kindeditordefault h4,
+.kindeditordefault h5,
+.kindeditordefault h6 {
+    margin-bottom: 16px !important;
+    margin-top: 16px !important;
+    padding: 1px !important;
+}
+
+.kindeditordefault p {
+    margin-bottom: 6px !important;
+    margin-top: 6px !important;
+    padding: 1px !important;
+}
+
+/*限制图片大小以免溢出*/
+.kindeditordefault img {
+    max-width:100%;max-height:100%;
+}
+.kindeditordefault a{
+    text-decoration: blink;
+    cursor: pointer;
+    color: #77aaff;
+}
+/*代码高亮显示问题*/
+.kindeditordefault pre span {
+    font-size: 12px;
+    line-height: 1.5;
+}
+.kindeditordefault pre{ 
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+    font-family: Courier New !important;
+    font-size: 12px !important;
+}
+/*kindeditor   comment*/
+
+/*kindeditor inversion kin倒置样式调整*/
+.kindeditorinversion .ke-toolbar {
+    background-color: #ffffff;
+    border: 0px;
+    padding-left: 0px!important;
+    margin-left:0px;
+}
+.kindeditorinversion .ke-container,
+.kindeditorinversion .ke-container-simple {
+    border: 0px
+}
+.kindeditorinversion  .ke-edit {
+    border: 1px solid #eaeaea;
+    margin-bottom: 0px
+}
+.kindeditorinversion .ke-outline  {
+    margin-right: 4px;
+    margin-left:0px
+}
+
+.ke-toolbar-icon {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    background: none;
+}
+
+/*修改部分*/
+.ke-icon-fontsize{
+    background: none;
+    font-family:"iconfont" !important;
+    font-size:12px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.ke-toolbar .ke-outline {
+    line-height:16px;
+}
+.ke-toolbar-icon{
+    line-height:20px;
+    color:#555;
+    font-size:12px;
+    text-align:center;
+}
+.ke-toolbar-icon:hover{
+    color:rgb(225, 187, 137);
+}
+.ke-container-simple .ke-toolbar .ke-outline{
+    margin: 1px 5px;
+}
