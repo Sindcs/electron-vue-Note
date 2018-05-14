@@ -38,10 +38,8 @@ export default {
     } else {
       return false;
     }
-    dom.removeAttr('style');
     dom.removeAttr('onchange');
     dom.removeAttr('onclick');
-    dom.removeAttr('style');
     dom.removeAttr('onmouseout');
     dom.removeAttr('onmouseover');
     dom.removeAttr('onmousedown');
