@@ -2,38 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9052d1ae-8208-45d1-84f3-8d2660ebfe4f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/business/cataLogOperatore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/business/tagOperatore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/business/tag_documentOperatore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/business/userOperatore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/config/appConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/config/baseDict.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/config/iconStyleDict.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/config/staticConfig.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/dal/User.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/dal/catalogdal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/dal/dbinit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/dal/documentdal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/dal/resource.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/dal/tag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/dal/tag_documentdal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/foundation/localstorage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/foundation/log.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/foundation/nedb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/foundation/sqlitTransaction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/foundation/sqlitdb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/foundation/sqliteConnection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/model/enumtype.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/model/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/model/lietrature.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/common/mongoHelper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/common/redis.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/business/documentOperatore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/common/cmdHelper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/common/dialog.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/common/evenBus.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/common/imageHelper.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/common/ipcMessage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/common/renderutil.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/business/noteOperatore.js" afterPath="$PROJECT_DIR$/src/renderer/business/noteOperatore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/common/util.js" afterPath="$PROJECT_DIR$/src/renderer/common/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/ToolBar/Index.Vue" afterPath="$PROJECT_DIR$/src/renderer/components/ToolBar/Index.Vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/config/index.js" afterPath="$PROJECT_DIR$/src/renderer/config/index.js" />
     </list>
     <ignored path="elevue-Note.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,9 +33,41 @@
       <file leaf-file-name="Index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/renderer/components/toolBar/Index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+            <state relative-caret-position="528">
+              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="noteOperatore.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderer/business/noteOperatore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="renderutil.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderer/common/renderutil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="documentOperatore.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderer/business/documentOperatore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+              <folding>
+                <element signature="e#50#94#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,8 +75,8 @@
       <file leaf-file-name="cataLogOperatore.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/renderer/business/cataLogOperatore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+            <state relative-caret-position="330">
+              <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
               <folding>
                 <element signature="e#41#83#0" expanded="true" />
               </folding>
@@ -124,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/renderer/config/index.js" />
         <option value="$PROJECT_DIR$/src/renderer/dal/documentdal_.js" />
         <option value="$PROJECT_DIR$/src/renderer/components/toolBar/Index.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/business/documentOperatore.js" />
       </list>
     </option>
   </component>
@@ -196,6 +205,68 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renderer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renderer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renderer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -218,6 +289,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\My\GitProject\elevue-Note\src\renderer\business" />
+      <recent name="E:\My\GitProject\elevue-Note\src\renderer\common" />
       <recent name="E:\My\GitProject\elevue-Note\src\renderer" />
       <recent name="E:\My\GitProject\elevue-Note\src\renderer\components\toolBar" />
     </key>
@@ -293,7 +365,7 @@
       <workItem from="1525761918753" duration="22378000" />
       <workItem from="1526009099866" duration="5028000" />
       <workItem from="1526024100596" duration="2666000" />
-      <workItem from="1526258365960" duration="17316000" />
+      <workItem from="1526258365960" duration="18193000" />
     </task>
     <task id="LOCAL-00001" summary="init the base plugins">
       <created>1525765280611</created>
@@ -313,7 +385,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47388000" />
+    <option name="totallyTimeSpent" value="48265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="156" y="0" width="1764" height="1040" extended-state="0" />
@@ -379,9 +451,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/renderer/business11844131.txt" />
-    <entry file="file://$PROJECT_DIR$/src/renderer/business11844133.txt" />
-    <entry file="file://$PROJECT_DIR$/src/renderer/business11844134.txt" />
     <entry file="file://$PROJECT_DIR$/src/renderer/components/145.txt" />
     <entry file="file://$PROJECT_DIR$/src/renderer/components/184.txt" />
     <entry file="file://$PROJECT_DIR$/src/renderer/components/10.txt" />
@@ -610,16 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/common/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="302" column="4" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="4" />
-          <folding>
-            <marker date="1526354291955" expanded="true" signature="7553:7581" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/common/mysql.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -657,16 +716,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/business/noteOperatore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-          <folding>
-            <element signature="e#49#91#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,16 +783,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/components/toolBar/Index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        <state relative-caret-position="528">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/common/cmdHelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/business/noteOperatore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/common/renderutil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/common/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6644">
+          <caret line="302" column="4" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="4" />
+          <folding>
+            <marker date="1526354291955" expanded="true" signature="7553:7581" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/business/documentOperatore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <element signature="e#50#94#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/business/cataLogOperatore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        <state relative-caret-position="330">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
           <folding>
             <element signature="e#41#83#0" expanded="true" />
           </folding>
