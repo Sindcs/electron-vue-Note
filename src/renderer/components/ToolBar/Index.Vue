@@ -29,11 +29,11 @@
   .toolBar {
     display: block;
     padding: 3px 10px;
-    height: 30px;
+    height: 26px;
     border: 2px #CCCCCC solid;
     border-left: 0px;
     border-right: 0px;
-    line-height: 30px;
+    line-height: 26px;
     font-family: "新宋体";
     li {
       padding: 0px 10px;
