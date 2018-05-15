@@ -8,6 +8,9 @@
 <script type="text/ecmascript-6">
   import cataLog from '../cataLog/index.vue'
   export default {
+    components: {
+      cataLog
+    },
     data () {
       return {
       }

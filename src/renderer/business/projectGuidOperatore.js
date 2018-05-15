@@ -26,7 +26,7 @@ export default {
         if (err) {
           console.log(err)
         } else {
-          var lineSql = `<ID> = ${id}\r\n<HtmlContent> = ${sourceContent}\r\n`
+          var lineSql = `<ID>= ${id}\r\n<HtmlContent>= ${sourceContent}\r\n`
           fs.exists(fileName, exist => {
             if (exist) {
               fs.appendFile(fileName, lineSql, function (err) {

@@ -40,14 +40,14 @@ export default {
   },
   checkExist: (name, cataLogId, callback) => {
     db.get('SELECT count(1) as count FROM cataLog WHERE parentCataLogId = ? AND name = ?',
-       [cataLogId, name],
-       function (err, row) {
-         if (err) {
-           callback(err, null)
-         } else {
-           callback(null, row)
-         }
-       })
+      [cataLogId, name],
+      function (err, row) {
+        if (err) {
+          callback(err, null)
+        } else {
+          callback(null, row)
+        }
+      })
   },
   // 获取监控文件夹
   getMonitoredCataLog: (callback) => {
@@ -89,10 +89,10 @@ export default {
           callback(err, null)
         } else {
           /* if (rows.length > 0) {
-            for (let i = 0; i < rows.length; i++) {
-              this['a'].getOneAllChild(rows[i].uuid, callback)
-            }
-          } */
+           for (let i = 0; i < rows.length; i++) {
+           this['a'].getOneAllChild(rows[i].uuid, callback)
+           }
+           } */
           callback(null, rows)
         }
       }
@@ -135,7 +135,7 @@ export default {
     db.run(`INSERT INTO 
     cataLog (uuid, name, type, isMonitored, isChanged, cataLogChain, monitoredPath, childNum, docNum, parentCataLogId, dateCreated) 
     VALUES (?,?,?,?,?,?,?,?,?,?,?)`,
-      [catalog.uuid, catalog.name, catalog.type, catalog.isMonitored, catalog.isChanged, catalog.cataLogChain, catalog.monitoredPath, 0, 0, catalog.parentCataLogId, catalog.dateCreated],
+    [catalog.uuid, catalog.name, catalog.type, catalog.isMonitored, catalog.isChanged, catalog.cataLogChain, catalog.monitoredPath, 0, 0, catalog.parentCataLogId, catalog.dateCreated], 
       (err) => {
         if (err) {
           let str = `insert to cataLog err:${err}`
@@ -144,8 +144,7 @@ export default {
         } else {
           callback(null)
         }
-      }
-    )
+      })
   },
   updateName: (uuid, name, isChanged, callback) => {
     db.run(`UPDATE cataLog set 

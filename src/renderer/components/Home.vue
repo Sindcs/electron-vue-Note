@@ -13,6 +13,8 @@
 
 <script type="text/ecmascript-6">
   import toolBar from './toolBar/Index.vue'
+  import mainBody from './mainBody/index'
+
   import util from '../common/util'
   import projectGuidOperator from '../business/projectGuidOperatore'
 
@@ -22,7 +24,8 @@
   export default {
     name: 'landing-page',
     components: {
-      toolBar
+      toolBar,
+      mainBody
     },
     methods: {
       rebuild () {

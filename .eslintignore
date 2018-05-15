@@ -3,3 +3,4 @@ test/unit/*.js
 test/e2e/*.js
 src/renderer/common/*.js
 src/renderer/business/*.js
+src/renderer/dal/*.js

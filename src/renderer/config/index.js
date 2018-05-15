@@ -27,10 +27,10 @@ console.log('app data path: ' + app.getPath('userData'))
 export default {
   dbConnct: {
     mySql: {
-      host: '192.168.106.42',
+      host: '192.168.107.51',
       user: 'root',
-      password: 'root',
-      database: 'personaltool'
+      password: 'cnki',
+      database: 'hy_cpro'
     }
   },
   dbPath: {

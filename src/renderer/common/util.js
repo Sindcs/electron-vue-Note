@@ -23,21 +23,21 @@ export default {
     return 'dadad'
   },
   removeStyle: function (dom) {
-    let exceptList = [
-      'title',
-      'style',
-      'script',
-      'meta',
-      'link',
-      'dialog',
-      'audio',
-      'embed',
-      'video',
-      'wbr'
-    ];
     let nodeName = dom.prop("nodeName");
     if (nodeName) {
       nodeName = nodeName.toLowerCase();
+      const exceptList = [
+        'title',
+        'style',
+        'script',
+        'meta',
+        'link',
+        'dialog',
+        'audio',
+        'embed',
+        'video',
+        'wbr'
+      ];
       if (exceptList.indexOf(nodeName) >= 0) {
         dom.remove();
         return false;
@@ -61,6 +61,26 @@ export default {
     }
     if (href && !(lhref.indexOf('http:') === 0 || lhref.indexOf('https:') === 0)) {
       dom.removeAttr('href');
+    }
+    let style = dom.attr('style');
+    if (style) {
+      let removeStyle = [
+        'color',
+        'font-size',
+        'font-family',
+        'font-style',
+        'font-weight',
+        'letter-spacing',
+        'word-spacing',
+        'font'
+      ];
+      for (let attr of removeStyle) {
+        let regStr = `${attr}[\s]*:[\s]*[^<>;]*;`;
+        style = style.replace(new RegExp(regStr, 'gi'), '');
+        regStr = `${attr}[\s]*:[\s]*[^<>;]*"`;
+        style = style.replace(new RegExp(regStr, 'gi'), '"');
+      }
+      dom.attr('style', style);
     }
     let childList = dom.children();
     if (childList && childList.length) {
