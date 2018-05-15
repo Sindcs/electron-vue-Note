@@ -55,6 +55,8 @@ let confirm = function (param) {
 Vue.prototype.$alert = alert
 Vue.prototype.$confirm = confirm
 
+require('./assets/css/main.css')
+
 /* eslint-disable no-new */
 new Vue({
   components: { App },

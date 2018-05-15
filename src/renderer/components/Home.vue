@@ -1,6 +1,8 @@
 <template>
   <div id="wrapper">
     <main>
+      <toolBar></toolBar>
+      <mainBody></mainBody>
       <div class="left-side">
         <el-button type="success" icon="el-icon-check" v-on:click="rebuild">重构指南数据</el-button>
         <el-button type="success" icon="el-icon-check" v-on:click="restore">还原数据</el-button>
@@ -10,6 +12,9 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import toolBar from './toolBar/Index.vue'
+  import mainBody from './mainBody/index'
+
   import util from '../common/util'
   import projectGuidOperator from '../business/projectGuidOperatore'
 
@@ -18,6 +23,10 @@
 
   export default {
     name: 'landing-page',
+    components: {
+      toolBar,
+      mainBody
+    },
     methods: {
       rebuild () {
         projectGuidOperator.getProjectList((err, list) => {
