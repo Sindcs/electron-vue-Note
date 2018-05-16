@@ -11,6 +11,18 @@ export default new Router({
       component: require('@/components/Home').default
     },
     {
+      path: '/nodeIndex/:uuid',
+      name: 'nodeIndex',
+      component: require('@/components/personalNote/index').default,
+      children: [
+        {
+          path: '/nodeDetail/:uuid',
+          name: 'nodeDetail',
+          component: require('@/components/personalNote/noteEditor')
+        }
+      ]
+    },
+    {
       path: '*',
       redirect: '/'
     }

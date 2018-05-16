@@ -1,6 +1,5 @@
 <template>
   <div class="noteItemCon" ref="noteItemCon" style="position: relative">
-    <add-item @click="addNote"></add-item>
     <div class="tool">
       <div class="showMenu">
         <span style="padding-left: 10px">共{{count}}条</span>
@@ -19,9 +18,7 @@
     <div ref="noteListCon" class="noteListCon" >
       <scroll-page v-if="itemList.length !== 0" :isLoad="isLoad" :isGettingData="isGetPage" @scrollGetData="getNewData" style="height: 100%">
         <div slot="scrollContent">
-          <docbase-item v-for="(item, index) in itemList" :quikDirType = "quikDirType" :item = "item" @deleteOne="deleteOne" @changBackColor="changBackColor">
-            <note-item slot="item" :firstUuid="itemList[0].uuid" :item="item"></note-item>
-          </docbase-item>
+          <note-item slot="item" :firstUuid="itemList[0].uuid" :item="item"></note-item>
         </div>
       </scroll-page>
     </div>
@@ -30,26 +27,12 @@
 
 <script type="text/ecmascript-6">
   import noteItem from './noteItem.vue'
-  import addItem from '../common/addItem.vue'
-  import documentHelper from '../../common/documentHelper'
-  import {cataLogType} from '../../model/enumtype'
-  import docbaseItem from '../common/docbaseItem.vue'
-  import {mapGetters} from 'vuex'
-  import util from '../../common/util'
-  import noteOperatore from '../../business/noteOperatore'
-  import cataLogOperatore from '../../business/cataLogOperatore'
-  import search from '../../business/search'
-  import log from '../../foundation/log'
-  import * as types from '../../vuex/mutation-types'
   import scrollPage from '../common/scrollPage.vue'
-  import evenBus from '../../common/evenBus'
 
   export default {
     components: {
       noteItem,
-      docbaseItem,
-      scrollPage,
-      addItem
+      scrollPage
     },
     data () {
       return {
@@ -63,7 +46,7 @@
         cataLogInfo: {},
         pageIndex: 0,
         pageSize: 10,
-        quikDirType: cataLogType.personalNote,
+        quikDirType: '',
         reclArr: [],
         isChangItem: false,
         isShowDele: false,
@@ -71,192 +54,12 @@
         isShowRecl: false,
         itemList: []
       }
-    },
-    beforeRouteUpdate (to, from, next) {
-      if (util.startWith(from.path, to.path) && this.$store.state.base.isCurentItemClick && this.itemList.length) {
-        this.$store.commit(types.CHANG_CURRENT_ROUTER, false)
-        this.$router.push({ name: 'routerEditPerNote', params: { cataLogId: this.cataLogId, uuid: this.itemList[0].uuid } })
-      } else {
-        next()
-      }
-    },
-    computed: {
-      ...mapGetters([
-        'themeColor',
-        'searchInfo',
-        'currentSelectDoc',
-        'currentChangeNote',
-        'currentSelectedItem',
-        'currentExportItem'
-      ])
-    },
-    mounted: function () {
-      this.$nextTick(() => {
-        this.cataLogId = this.currentSelectedItem.uuid
-        // this.getNodeList(true)
-      })
-    },
-    created () {
-      evenBus.$on('moveSuccess', (doc) => {
-        util.remove(this.itemList, doc)
-      })
-    },
-    watch: {
-      'currentSelectedItem': function (val) {
-        this.cataLogId = val.uuid
-        this.pageIndex = 0
-      },
-      'searchInfo': function (val) {
-        this.itemList = []
-        this.getNodeList(true)
-      },
-      'currentChangeNote': function (val) {
-        util.updateArray(this.itemList, val)
-      },
-      'currentExportItem': function (val) {
-        if (val.uuid === this.currentSelectedItem.uuid) {
-          this.itemList = []
-          this.getNodeList(true)
-        }
-      }
-    },
-    methods: {
-      keydown (e) {
-        if (e.keyCode === 13) {
-          this.itemList = []
-          this.filter(this.query)
-        }
-      },
-      filter (keywords) {
-        if (this.cataLogId) {
-          search.searchNodeList(this.cataLogId, keywords).then(res => {
-            for (let i = 0; i < res.length; i++) {
-              res[i].title = util.tagColor(res[i].title, keywords)
-              res[i].abstracts = util.tagColor(res[i].abstracts, keywords)
-            }
-            this.itemList = res
-            this.router()
-          }).catch(err => {
-            console.log(err)
-            log.writeErr(err)
-          })
-        }
-      },
-      changSelectStyle () {
-        if (this.itemList.length !== 0) {
-          if (this.lastSelectItemDom) {
-            this.lastSelectItemDom.setAttribute('style', '')
-          }
-          this.$nextTick(() => {
-            let nodeItemDom = this.$refs.noteItemCon
-            if (noteItem && nodeItemDom) {
-              let dom = nodeItemDom.querySelector('.noteItem')
-              if (dom) {
-                dom.setAttribute('style', 'background:rgba(0, 0, 0, 0.04);')
-                this.lastSelectItemDom = dom
-              }
-            }
-          })
-        }
-      },
-      getNewData () {
-        this.pageIndex++
-        this.getNodeList()
-      },
-      loading (res) {
-        this.isGetPage = false
-        if (res.length !== 0) {
-          if (this.pageIndex === 0) {
-            this.itemList.push(...res)
-          } else if (this.pageIndex > 0) {
-            this.isLoad = true
-            setTimeout(() => {
-              this.itemList.push(...res)
-              this.isLoad = false
-            }, 100)
-          }
-        } else {
-          this.isLoad = false
-          if (this.pageIndex > 0) {
-            this.pageIndex = this.pageIndex - 1
-          }
-        }
-      },
-      getNodeList (isReload) {
-        if (this.isGetData) {
-          return
-        }
-        this.isGetData = true
-        if (isReload) {
-          this.itemList = []
-        }
-        let cataLogId = this.cataLogId
-        let queryParam = this.searchInfo.query
-        if (cataLogId === cataLogType.personalNote) {
-          cataLogId = ''
-        }
-        cataLogOperatore.getOneCataLogInfo(this.cataLogId).then(rs => {
-          if (rs) {
-            this.cataLogInfo = rs
-          } else {
-            this.cataLogInfo = {
-              name: '[全部目录]'
-            }
-          }
-        })
-        noteOperatore.getByCatalogId(cataLogId, cataLogType.personalNote, queryParam, this.pageIndex, this.pageSize).then(res => {
-          this.loading(res.nodes)
-          this.isGetData = false
-          this.count = res.totalCount
-          if (isReload) {
-            this.changSelectStyle()
-            this.router()
-          }
-        }).catch(err => {
-          this.isGetData = false
-          console.log(err)
-          log.writeErr(err)
-        })
-      },
-      router () {
-        if (this.itemList && this.itemList.length) {
-          let item = this.itemList[0]
-          let params = {uuid: item.uuid, quikDirType: cataLogType.personalNote, cataLogId: item.cataLogId}
-          this.$router.push({name: cataLogType.personalNote + cataLogType.personalNote + 'Detail', params: params})
-        }
-        this.$emit('setCurrentList', this.itemList)
-      },
-      changBackColor (lastdom) {
-        if (this.lastSelectItemDom) {
-          this.lastSelectItemDom.setAttribute('style', '')
-        }
-        lastdom.setAttribute('style', 'background:rgba(0, 0, 0, 0.04);')
-        this.lastSelectItemDom = lastdom
-      },
-      reSetCount () {
-        this.count --
-      },
-      deleteNote () {
-      },
-      sort () {
-        if (this.$refs.sortUl) {
-          this.$refs.sortUl.classList.toggle('showSort')
-        }
-      },
-      deleteOne (item) {
-        util.remove(this.itemList, item)
-        this.router()
-        this.count --
-        documentHelper.changCataLogDetail(this.currentSelectedItem)
-      },
-      addNote () {
-        this.$router.push({name: 'routerNewPerNote', params: {cataLogItem: this.cataLogInfo, uuid: '-100', isEditor: true}})
-      }
     }
   }
 </script>
 
 <style lang="scss" rel="stylesheet/scss" scoped>
+  @import '../../assets/scss/common.scss';
   .noteItemCon {
     display: -webkit-flex;
     flex-direction: column;

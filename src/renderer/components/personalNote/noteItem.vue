@@ -19,7 +19,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import * as types from '../../vuex/mutation-types'
+  import * as types from '../../store/mutation-types'
   import {mapGetters} from 'vuex'
   import util from '../../common/util'
 

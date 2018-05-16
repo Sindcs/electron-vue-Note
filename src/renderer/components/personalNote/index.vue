@@ -14,7 +14,6 @@
   import noteItemList from '../personalNote/noteItemList.vue'
   import noteEditor from '../personalNote/noteEditor.vue'
   import personalIndex from '../personalNote/index.vue'
-  import {mapGetters} from 'vuex'
 
   export default {
     components: {
@@ -25,21 +24,6 @@
     data () {
       return {
         list: []
-      }
-    },
-    computed: {
-      type: function () {
-        return this.$route.params.type
-      },
-      ...mapGetters([
-        'searchInfo',
-        'currentSelectedItem',
-        'currentChangeNote'
-      ])
-    },
-    methods: {
-      setCurrentList (val) {
-        this.list = val
       }
     }
   }

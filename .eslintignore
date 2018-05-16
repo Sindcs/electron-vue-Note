@@ -1,6 +1,7 @@
 test/unit/coverage/**
 test/unit/*.js
 test/e2e/*.js
+src/plugins/**
 src/renderer/common/*.js
 src/renderer/business/*.js
 src/renderer/dal/*.js

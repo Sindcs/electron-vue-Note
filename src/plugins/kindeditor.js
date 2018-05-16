@@ -2,7 +2,7 @@
  * Created by Sind on 2017/3/17.
  */
 // 加载kindeditor
-require('./kindeditor/kindeditor-min')
+require('./kindeditor/kindeditor')
 require('./kindeditor/themes/default/default.css')
 require('./kindeditor/themes/simple/simple.css')
 require('./kindeditor/prettify.css')

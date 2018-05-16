@@ -2,33 +2,361 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9052d1ae-8208-45d1-84f3-8d2660ebfe4f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/base/modal.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/base/moveItem.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/cataLog/newCataLogDialog.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/index.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/noteEditor.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/noteFileSelect.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/noteItem.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/noteItemList.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/noteScan.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/store/getters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/store/modules/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/store/mutation-types.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/store/modules/Counter.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/assets/scss/common.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/base/drop/drop.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/base/drop/dropUpload.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/base/drop/mixins.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/base/kindEditor.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/common/scrollPage.vue" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/components/118_4_2_14_38.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/components/118_4_2_14_43.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/components/118_4_2_15_29.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/kindeditor-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/kindeditor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/code/code.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/insertImage/insertImage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/lineheight/lineheight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/link/link.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/quickformat/quickformat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/table/table.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/prettify.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/anchor.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/blank.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/flash.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/media.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/rm.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/alertDialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/default.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/kindeditordefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/wordupload.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/simple/simple.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/zh_CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.combined.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.combined.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.worker.entry.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.worker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.worker.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.worker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-EUC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-EUC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-RKSJ-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-RKSJ-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78ms-RKSJ-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78ms-RKSJ-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/83pv-RKSJ-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90ms-RKSJ-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90ms-RKSJ-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90msp-RKSJ-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90msp-RKSJ-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90pv-RKSJ-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90pv-RKSJ-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Add-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Add-RKSJ-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Add-RKSJ-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Add-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-0.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-1.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-2.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-3.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-4.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-5.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-6.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-UCS2.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-0.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-1.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-2.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-3.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-4.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-5.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-UCS2.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-0.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-1.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-2.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-3.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-4.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-5.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-6.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-UCS2.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Korea1-0.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Korea1-1.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Korea1-2.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Korea1-UCS2.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/B5-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/B5-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/B5pc-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/B5pc-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS-EUC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS-EUC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS1-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS1-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS2-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS2-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETHK-B5-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETHK-B5-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETen-B5-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETen-B5-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETenms-B5-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETenms-B5-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/EUC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/EUC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Ext-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Ext-RKSJ-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Ext-RKSJ-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Ext-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GB-EUC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GB-EUC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GB-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GB-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBK-EUC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBK-EUC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBK2K-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBK2K-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBKp-EUC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBKp-EUC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBT-EUC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBT-EUC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBT-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBT-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBTpc-EUC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBTpc-EUC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBpc-EUC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBpc-EUC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKdla-B5-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKdla-B5-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKdlb-B5-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKdlb-B5-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKgccs-B5-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKgccs-B5-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKm314-B5-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKm314-B5-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKm471-B5-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKm471-B5-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKscs-B5-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKscs-B5-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Hankaku.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Hiragana.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-EUC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-EUC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-Johab-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-Johab-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCms-UHC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCms-UHC-HW-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCms-UHC-HW-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCms-UHC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCpc-EUC-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCpc-EUC-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Katakana.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/NWP-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/NWP-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/RKSJ-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/RKSJ-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Roman.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UCS2-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UCS2-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF16-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF16-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF32-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF32-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF8-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF8-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UCS2-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UCS2-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF16-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF16-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF32-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF32-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF8-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF8-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UCS2-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UCS2-HW-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UCS2-HW-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UCS2-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF16-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF16-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF32-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF32-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF8-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF8-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF16-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF16-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF32-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF32-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF8-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF8-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISPro-UCS2-HW-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISPro-UCS2-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISPro-UTF8-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISX0213-UTF32-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISX0213-UTF32-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISX02132004-UTF32-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISX02132004-UTF32-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UCS2-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UCS2-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF16-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF16-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF32-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF32-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF8-H.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF8-V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/V.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/WP-Symbol.bcmap" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/annotation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/arithmetic_decoder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/bidi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/cff_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/charsets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/chunked_stream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/cmap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/colorspace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/crypto.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/document.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/encodings.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/evaluator.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/font_renderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/fonts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/function.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/glyphlist.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/jbig2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/jpg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/jpx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/metrics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/murmurhash3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/network.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/obj.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/pattern.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/pdf_manager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/primitives.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/ps_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/standard_fonts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/stream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/type1_parser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/unicode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/worker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/annotation_layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/api.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/dom_utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/font_loader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/global.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/metadata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/pattern_helper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/svg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/text_layer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/webgl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/pdf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/pdf.worker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/shared/compatibility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/shared/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/annotation_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/api_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/bidi_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/cff_parser_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/cmap_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/crypto_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/document_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/dom_utils_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/evaluator_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/fonts_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/function_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/jasmine-boot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/metadata_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/murmurhash3_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/network_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/parser_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/primitives_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/stream_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/test_utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/testreporter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/type1_parser_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/ui_utils_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/unicode_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/util_spec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/annotation_layer_builder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/chromecom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/debugger.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/dom_events.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/download_manager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/firefox_print_service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/firefoxcom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/genericcom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/grab_to_pan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/hand_tool.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/interfaces.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/overlay_manager.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/password_prompt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_attachment_viewer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_document_properties.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_find_bar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_find_controller.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_history.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_link_service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_outline_viewer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_page_view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_presentation_mode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_print_service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_rendering_queue.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_sidebar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_thumbnail_view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_thumbnail_viewer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_viewer.component.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_viewer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdfjs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/preferences.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/secondary_toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/text_layer_builder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/toolbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/ui_utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/view_history.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/compatibility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/compatibility.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-check.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-comment.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-help.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-insert.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-key.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-newparagraph.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-noicon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-note.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-paragraph.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/loading-icon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/shadow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/texture.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/pdf_viewer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/pdf_viewer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/pdf_viewer.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/webpack.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" afterPath="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintignore" afterPath="$PROJECT_DIR$/.eslintignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.ejs" afterPath="$PROJECT_DIR$/src/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/assets/css/main.css" afterPath="$PROJECT_DIR$/src/renderer/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/business/cataLogOperatore.js" afterPath="$PROJECT_DIR$/src/renderer/business/cataLogOperatore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/business/noteOperatore.js" afterPath="$PROJECT_DIR$/src/renderer/business/noteOperatore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/Home.vue" afterPath="$PROJECT_DIR$/src/renderer/components/Home.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/ToolBar/Index.Vue" afterPath="$PROJECT_DIR$/src/renderer/components/ToolBar/Index.Vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/msg/20180516.txt" afterPath="$PROJECT_DIR$/log/msg/20180516.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/base/menu.vue" afterPath="$PROJECT_DIR$/src/renderer/components/base/menu.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/cataLog/index.vue" afterPath="$PROJECT_DIR$/src/renderer/components/cataLog/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/mainBody/Index.vue" afterPath="$PROJECT_DIR$/src/renderer/components/mainBody/Index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/dal/catalogdal.js" afterPath="$PROJECT_DIR$/src/renderer/dal/catalogdal.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/dal/dbinit.js" afterPath="$PROJECT_DIR$/src/renderer/dal/dbinit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/main.js" afterPath="$PROJECT_DIR$/src/renderer/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/store/index.js" afterPath="$PROJECT_DIR$/src/renderer/store/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/personalNote/index.vue" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/index.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/personalNote/noteEditor.vue" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/noteEditor.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/personalNote/noteItem.vue" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/noteItem.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/personalNote/noteItemList.vue" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/noteItemList.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/router/index.js" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/store/mutation-types.js" afterPath="$PROJECT_DIR$/src/renderer/store/mutation-types.js" />
     </list>
     <ignored path="elevue-Note.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,76 +371,19 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="dbinit.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/renderer/dal/dbinit.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="3976">
-                    <caret line="212" column="9" selection-start-line="212" selection-start-column="9" selection-end-line="212" selection-end-column="9" />
-                    <folding>
-                      <element signature="n#!!doc" expanded="true" />
-                      <element signature="e#51#86#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="elevue-Note" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="newCataLogDialog.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderer/components/cataLog/newCataLogDialog.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#modal#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#modal#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#652#690#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderer/components/Home.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderer/components/mainBody/index.vue">
+      <file leaf-file-name="noteEditor.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/noteEditor.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderer/components/base/menu.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="79" column="33" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
               <folding>
-                <element signature="e#764#815#0" expanded="true" />
+                <element signature="e#1270#1316#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +392,8 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="53" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="53" />
+            <state relative-caret-position="132">
+              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
               <folding>
                 <element signature="e#343#402#0" expanded="true" />
               </folding>
@@ -130,45 +401,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noteEditor.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/noteEditor.vue">
+      <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderer/components/mainBody/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2146">
-              <caret line="343" column="15" selection-start-line="343" selection-start-column="15" selection-end-line="343" selection-end-column="15" />
-              <folding>
-                <element signature="e#1585#1641#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="noteItem.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/noteItem.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+            <state relative-caret-position="66">
+              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noteItemList.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/noteItemList.vue">
+      <file leaf-file-name="menu.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/renderer/components/base/menu.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-              <folding>
-                <element signature="e#1322#1359#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="194">
+              <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noteScan.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/noteScan.vue">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/renderer/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="241">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -177,11 +434,9 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/renderer/components/cataLog/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-              <folding>
-                <element signature="e#200#237#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-202">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -213,7 +468,6 @@
         <option value="$PROJECT_DIR$/node_modules/mysql/Readme.md" />
         <option value="$PROJECT_DIR$/src/renderer/common/mysql.js" />
         <option value="$PROJECT_DIR$/src/renderer/components/LandingPage.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/router/index.js" />
         <option value="$PROJECT_DIR$/src/renderer/components/ToolBar/Index.Vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/toolBar/Index.Vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/toolBar/Home.vue" />
@@ -223,14 +477,12 @@
         <option value="$PROJECT_DIR$/src/renderer/model/enumtype.js" />
         <option value="$PROJECT_DIR$/src/renderer/dal/documentdal_.js" />
         <option value="$PROJECT_DIR$/src/renderer/business/documentOperatore.js" />
-        <option value="$PROJECT_DIR$/.eslintignore" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/renderer/business/projectGuidOperatore.js" />
         <option value="$PROJECT_DIR$/src/renderer/config/index.js" />
         <option value="$PROJECT_DIR$/src/renderer/common/util.js" />
         <option value="$PROJECT_DIR$/config/log4js.json" />
         <option value="$PROJECT_DIR$/src/renderer/store/index.js" />
-        <option value="$PROJECT_DIR$/src/renderer/store/mutation-types.js" />
         <option value="$PROJECT_DIR$/src/renderer/store/modules/base.js" />
         <option value="$PROJECT_DIR$/src/renderer/store/getters.js" />
         <option value="$PROJECT_DIR$/src/renderer/dal/dbinit.js" />
@@ -246,10 +498,19 @@
         <option value="$PROJECT_DIR$/src/renderer/components/cataLog/newCataLogDialog.vue" />
         <option value="$PROJECT_DIR$/src/renderer/dal/catalogdal.js" />
         <option value="$PROJECT_DIR$/src/renderer/business/cataLogOperatore.js" />
-        <option value="$PROJECT_DIR$/src/renderer/components/base/menu.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/base/kindEditor.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/base/drop/drop.vue" />
+        <option value="$PROJECT_DIR$/.eslintignore" />
         <option value="$PROJECT_DIR$/src/renderer/components/personalNote/noteEditor.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/personalNote/noteItem.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/personalNote/index.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/personalNote/noteItemList.vue" />
+        <option value="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" />
+        <option value="$PROJECT_DIR$/src/renderer/store/mutation-types.js" />
+        <option value="$PROJECT_DIR$/src/plugins/kindeditor.js" />
+        <option value="$PROJECT_DIR$/src/plugins/kindeditor/kindeditor.js" />
+        <option value="$PROJECT_DIR$/src/renderer/router/index.js" />
+        <option value="$PROJECT_DIR$/src/renderer/components/base/menu.vue" />
       </list>
     </option>
   </component>
@@ -261,8 +522,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-22" />
-    <option name="y" value="46" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -359,7 +620,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dal" />
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renderer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="router" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,6 +694,98 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renderer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mainBody" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renderer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cataLog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renderer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="base" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="elevue-Note" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -422,7 +797,7 @@
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="E:/cnki/Project/Sparkus/KSNS_PDTS/src/KSNS_PDTS/KSNS_PDTS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -432,14 +807,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\My\GitProject\elevue-Note\src" />
       <recent name="E:\My\GitProject\elevue-Note\config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\My\GitProject\elevue-Note\src\renderer\components" />
+      <recent name="E:\My\GitProject\elevue-Note\src\renderer\components\common" />
       <recent name="E:\My\GitProject\elevue-Note\src\renderer\components\base" />
-      <recent name="E:\My\GitProject\elevue-Note\src\renderer\components\cataLog" />
-      <recent name="E:\My\GitProject\elevue-Note\src\renderer\store" />
       <recent name="E:\My\GitProject\elevue-Note\src\renderer\assets" />
+      <recent name="E:\My\GitProject\elevue-Note\src\renderer\components" />
+      <recent name="E:\My\GitProject\elevue-Note\src\renderer\components\cataLog" />
     </key>
   </component>
   <component name="RunManager">
@@ -514,6 +890,8 @@
       <workItem from="1526009099866" duration="5028000" />
       <workItem from="1526024100596" duration="2666000" />
       <workItem from="1526258365960" duration="45671000" />
+      <workItem from="1526455843588" duration="2681000" />
+      <workItem from="1526459156380" duration="3152000" />
     </task>
     <task id="LOCAL-00001" summary="init the base plugins">
       <created>1525765280611</created>
@@ -533,18 +911,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75743000" />
+    <option name="totallyTimeSpent" value="81576000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-22" y="46" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18124342" sideWeight="0.76584023" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18124342" sideWeight="0.7676923" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.2792413" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18124342" sideWeight="0.23415978" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2972973" sideWeight="0.29083246" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18124342" sideWeight="0.23230769" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3008658" sideWeight="0.49578503" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21428572" sideWeight="0.7207587" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2972973" sideWeight="0.70916754" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52272725" sideWeight="0.6348788" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -580,122 +958,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/renderer/common/sign.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/common/cmdHelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/common/renderutil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/assets/themes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/foundation/log.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/common/log4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-          <folding>
-            <marker date="1526365161076" expanded="true" signature="178:1143" placeholder="{&quot;build&quot;: &quot;node .electron-vue/build.js &amp;&amp; electron-builder&quot;...}" />
-            <marker date="1526365161076" expanded="true" signature="1156:1761" placeholder="{&quot;productName&quot;: &quot;elevue-note&quot;...}" />
-            <marker date="1526365161076" expanded="true" signature="1258:1289" placeholder="{&quot;output&quot;: &quot;build&quot;...}" />
-            <marker date="1526365161076" expanded="true" signature="1304:1338" placeholder="[...]" />
-            <marker date="1526365161076" expanded="true" signature="1351:1592" placeholder="{...}" />
-            <marker date="1526365161076" expanded="true" signature="1371:1586" placeholder="[...]" />
-            <marker date="1526365161076" expanded="true" signature="1381:1492" placeholder="{&quot;x&quot;: 410...}" />
-            <marker date="1526365161076" expanded="true" signature="1502:1578" placeholder="{&quot;x&quot;: 130...}" />
-            <marker date="1526365161076" expanded="true" signature="1605:1650" placeholder="{&quot;icon&quot;: &quot;build/icons/icon.icns&quot;...}" />
-            <marker date="1526365161076" expanded="true" signature="1663:1707" placeholder="{&quot;icon&quot;: &quot;build/icons/icon.ico&quot;...}" />
-            <marker date="1526365161076" expanded="true" signature="1722:1757" placeholder="{&quot;icon&quot;: &quot;build/icons&quot;...}" />
-            <marker date="1526365161076" expanded="true" signature="1781:2116" placeholder="{&quot;axios&quot;: &quot;^0.16.1&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/config/appConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/118_4_2_14_34.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="1" column="164" selection-start-line="1" selection-start-column="164" selection-end-line="1" selection-end-column="164" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/118_4_2_14_36.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="1" column="879" selection-start-line="1" selection-start-column="879" selection-end-line="1" selection-end-column="879" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/118_4_2_14_38.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/118_4_2_14_36.txt" />
     <entry file="file://$PROJECT_DIR$/src/renderer/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -713,23 +980,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/store/modules/Counter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/store/modules/Counter.js" />
     <entry file="file://$PROJECT_DIR$/src/renderer/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,23 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/store/mutation-types.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="91" selection-start-line="1" selection-start-column="91" selection-end-line="1" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/base/moveItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,9 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#21#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -779,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -791,22 +1027,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/dal/dbinit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3976">
-          <caret line="212" column="9" selection-start-line="212" selection-start-column="9" selection-end-line="212" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#51#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/business/documentOperatore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -824,7 +1048,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -832,9 +1055,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -842,9 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,9 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -862,9 +1076,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#47#85#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -872,7 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -890,10 +1100,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#42#84#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -901,9 +1107,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#47#90#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -911,9 +1114,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -921,7 +1121,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
           <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,29 +1145,19 @@
         <state relative-caret-position="464">
           <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding>
-            <element signature="e#41#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/cataLog/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding>
-            <element signature="e#200#237#0" expanded="true" />
+            <element signature="e#41#83#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/components/cataLog/newCataLogDialog.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="1078">
           <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#modal#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#modal#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#652#690#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#modal#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#modal#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="e#652#690#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -977,43 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/mainBody/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/base/menu.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="79" column="33" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
-          <folding>
-            <element signature="e#764#815#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/noteEditor.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2146">
-          <caret line="343" column="15" selection-start-line="343" selection-start-column="15" selection-end-line="343" selection-end-column="15" />
-          <folding>
-            <element signature="e#1585#1641#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/noteItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,27 +1173,217 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/dal/dbinit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="212" column="9" selection-start-line="212" selection-start-column="9" selection-end-line="212" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#51#86#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/118_4_2_14_38.txt" />
+    <entry file="file://$PROJECT_DIR$/src/renderer/assets/scss/common.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/index.vue">
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/base/drop/drop.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="53" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="53" />
+        <state relative-caret-position="198">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/base/kindEditor.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding>
-            <element signature="e#343#402#0" expanded="true" />
+            <element signature="e#212#275#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/common/scrollPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="174" column="3" selection-start-line="174" selection-start-column="3" selection-end-line="174" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugins/kindeditor/kindeditor-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8228">
+          <caret line="91" column="16" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1493193983742" expanded="true" signature="15295:15308" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="51951:51964" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="59804:59817" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="69179:69195" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="69278:69305" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="69385:69405" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="69557:69595" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="70015:70028" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="73529:73543" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="79843:79899" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="86640:86653" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="90674:90722" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="105614:105632" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="105665:105690" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="109202:109225" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="109593:109613" placeholder="..." />
+            <marker date="1493193983742" expanded="true" signature="110224:110236" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugins/kindeditor/kindeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="5405" column="33" selection-start-line="5405" selection-start-column="33" selection-end-line="5405" selection-end-column="33" />
+          <folding>
+            <marker date="1526461929900" expanded="true" signature="34583:34596" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="46672:46685" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="65268:65281" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="81682:81700" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="81790:81819" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="81906:81928" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="82080:82104" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="82653:82666" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="89277:89291" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="100363:100419" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="109611:109624" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="114969:115020" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="143538:143556" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="143589:143614" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="149411:149436" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="149898:149920" placeholder="..." />
+            <marker date="1526461929900" expanded="true" signature="150724:150736" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugins/kindeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/store/mutation-types.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/noteItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+          <folding>
+            <element signature="e#842#893#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/noteItemList.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="266">
+          <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
           <folding>
-            <element signature="e#1322#1359#0" expanded="true" />
+            <element signature="e#1092#1129#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/base/moveItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/noteEditor.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="e#1270#1316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding>
+            <element signature="e#343#402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/cataLog/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-202">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/base/menu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/mainBody/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>

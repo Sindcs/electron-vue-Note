@@ -1,6 +1,6 @@
 <template>
   <li class="menu-li">
-    <a :style="item.styleClass" @contextmenu.prevent="newMenu">
+    <a :style="item.styleClass" @contextmenu.prevent="newMenu" @click.self="router">
       <span :class="isShow ? 'el-tree-node__expand-icon el-icon-caret-right expanded':'el-tree-node__expand-icon el-icon-caret-right'" v-if="item.childList && item.childList.length" @click.self="explain"></span>
       <span class ="nav-label"  @click="selectOne(item)">{{item.name}}</span>
     </a>
@@ -82,6 +82,9 @@
             this.item.childList.push(item)
           }
         }
+      },
+      router () {
+        this.$router.push({name: 'nodeIndex', params: {uuid: this.item.uuid}})
       }
     }
   }
