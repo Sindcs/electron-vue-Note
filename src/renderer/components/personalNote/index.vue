@@ -1,8 +1,7 @@
 <template>
-  <personalIndex v-if="type"></personalIndex>
-  <div id='note' v-else>
+  <div id='note'>
     <div class="noteLeft">
-      <note-item-list @setCurrentList="setCurrentList"></note-item-list>
+      <note-item-list></note-item-list>
     </div>
     <div class="noteRight" v-if="list.length">
       <router-view></router-view>
