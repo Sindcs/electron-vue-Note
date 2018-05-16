@@ -37,7 +37,7 @@
         return {
           uuid: this.propItem.uuid,
           name: this.propItem.name,
-          styleClass: `padding-left:${(this.propItem.cataLogChain.split('/').length - 1) * 20}px`,
+          styleClass: `padding-left:${(this.propItem.cataLogChain.split('/').length) * 20}px`,
           childList: this.propItem.childList,
           childCount: this.propItem.childCount,
           cataLogChain: this.propItem.cataLogChain

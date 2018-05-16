@@ -8,17 +8,19 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: require('@/components/Home').default
-    },
-    {
-      path: '/nodeIndex/:uuid',
-      name: 'nodeIndex',
-      component: require('@/components/personalNote/index').default,
+      component: require('@/components/Home').default,
       children: [
         {
-          path: '/nodeDetail/:uuid',
-          name: 'nodeDetail',
-          component: require('@/components/personalNote/noteEditor')
+          path: '/nodeIndex/:uuid',
+          name: 'nodeIndex',
+          component: require('@/components/personalNote/index').default,
+          children: [
+            {
+              path: '/nodeDetail/:uuid',
+              name: 'nodeDetail',
+              component: require('@/components/personalNote/noteEditor')
+            }
+          ]
         }
       ]
     },

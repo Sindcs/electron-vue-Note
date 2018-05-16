@@ -48,8 +48,9 @@
 <style lang="scss" rel="stylesheet/scss" scoped>
   .catalog{
     width: 280px;
+    float: left;
     height: calc(100% - 20px);
-    padding: 10px 20px;
+    padding: 10px 0px;
     font-size: 18px;
     color: #ffffff;
     background-color: #2A333C;

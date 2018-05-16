@@ -1,362 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9052d1ae-8208-45d1-84f3-8d2660ebfe4f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/assets/scss/common.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/base/drop/drop.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/base/drop/dropUpload.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/base/drop/mixins.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/base/kindEditor.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/renderer/components/common/scrollPage.vue" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/components/118_4_2_14_38.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/components/118_4_2_14_43.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/components/118_4_2_15_29.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/kindeditor-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/kindeditor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/code/code.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/insertImage/insertImage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/lineheight/lineheight.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/link/link.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/quickformat/quickformat.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/plugins/table/table.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/anchor.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/flash.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/media.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/common/rm.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/alertDialog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/background.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/default.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/kindeditordefault.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/default/wordupload.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/themes/simple/simple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/kindeditor/zh_CN.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.combined.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.combined.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.worker.entry.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.worker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.worker.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/build/pdf.worker.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-EUC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-EUC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-RKSJ-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-RKSJ-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78ms-RKSJ-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/78ms-RKSJ-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/83pv-RKSJ-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90ms-RKSJ-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90ms-RKSJ-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90msp-RKSJ-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90msp-RKSJ-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90pv-RKSJ-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/90pv-RKSJ-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Add-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Add-RKSJ-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Add-RKSJ-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Add-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-0.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-1.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-2.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-3.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-4.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-5.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-6.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-CNS1-UCS2.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-0.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-1.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-2.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-3.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-4.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-5.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-GB1-UCS2.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-0.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-1.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-2.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-3.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-4.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-5.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-6.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Japan1-UCS2.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Korea1-0.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Korea1-1.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Korea1-2.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Adobe-Korea1-UCS2.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/B5-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/B5-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/B5pc-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/B5pc-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS-EUC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS-EUC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS1-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS1-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS2-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/CNS2-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETHK-B5-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETHK-B5-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETen-B5-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETen-B5-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETenms-B5-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/ETenms-B5-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/EUC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/EUC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Ext-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Ext-RKSJ-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Ext-RKSJ-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Ext-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GB-EUC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GB-EUC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GB-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GB-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBK-EUC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBK-EUC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBK2K-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBK2K-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBKp-EUC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBKp-EUC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBT-EUC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBT-EUC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBT-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBT-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBTpc-EUC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBTpc-EUC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBpc-EUC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/GBpc-EUC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKdla-B5-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKdla-B5-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKdlb-B5-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKdlb-B5-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKgccs-B5-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKgccs-B5-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKm314-B5-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKm314-B5-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKm471-B5-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKm471-B5-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKscs-B5-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/HKscs-B5-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Hankaku.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Hiragana.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-EUC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-EUC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-Johab-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-Johab-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCms-UHC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCms-UHC-HW-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCms-UHC-HW-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCms-UHC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCpc-EUC-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/KSCpc-EUC-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Katakana.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/NWP-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/NWP-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/RKSJ-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/RKSJ-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/Roman.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UCS2-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UCS2-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF16-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF16-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF32-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF32-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF8-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniCNS-UTF8-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UCS2-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UCS2-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF16-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF16-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF32-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF32-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF8-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniGB-UTF8-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UCS2-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UCS2-HW-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UCS2-HW-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UCS2-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF16-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF16-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF32-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF32-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF8-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS-UTF8-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF16-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF16-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF32-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF32-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF8-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJIS2004-UTF8-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISPro-UCS2-HW-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISPro-UCS2-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISPro-UTF8-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISX0213-UTF32-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISX0213-UTF32-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISX02132004-UTF32-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniJISX02132004-UTF32-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UCS2-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UCS2-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF16-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF16-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF32-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF32-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF8-H.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/UniKS-UTF8-V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/V.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/cmaps/WP-Symbol.bcmap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/annotation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/arithmetic_decoder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/bidi.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/cff_parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/charsets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/chunked_stream.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/cmap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/colorspace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/crypto.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/document.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/encodings.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/evaluator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/font_renderer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/fonts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/function.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/glyphlist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/image.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/jbig2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/jpg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/jpx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/metrics.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/murmurhash3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/network.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/obj.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/pattern.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/pdf_manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/primitives.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/ps_parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/standard_fonts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/stream.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/type1_parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/unicode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/core/worker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/annotation_layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/dom_utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/font_loader.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/global.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/metadata.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/pattern_helper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/text_layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/display/webgl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/pdf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/pdf.worker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/shared/compatibility.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/shared/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/annotation_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/api_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/bidi_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/cff_parser_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/cmap_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/crypto_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/document_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/dom_utils_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/evaluator_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/fonts_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/function_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/jasmine-boot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/metadata_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/murmurhash3_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/network_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/parser_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/primitives_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/stream_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/test_utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/testreporter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/type1_parser_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/ui_utils_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/unicode_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/test/unit/util_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/annotation_layer_builder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/chromecom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/debugger.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/dom_events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/download_manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/firefox_print_service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/firefoxcom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/genericcom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/grab_to_pan.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/hand_tool.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/interfaces.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/overlay_manager.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/password_prompt.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_attachment_viewer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_document_properties.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_find_bar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_find_controller.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_history.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_link_service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_outline_viewer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_page_view.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_presentation_mode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_print_service.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_rendering_queue.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_sidebar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_thumbnail_view.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_thumbnail_viewer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_viewer.component.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdf_viewer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/pdfjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/preferences.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/secondary_toolbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/text_layer_builder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/toolbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/ui_utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/lib/web/view_history.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/compatibility.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/compatibility.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-check.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-comment.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-help.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-insert.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-key.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-newparagraph.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-noicon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-note.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/annotation-paragraph.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/loading-icon.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/shadow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/images/texture.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/pdf_viewer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/pdf_viewer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/web/pdf_viewer.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/renderer/plugins/pdfjs/webpack.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" afterPath="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintignore" afterPath="$PROJECT_DIR$/.eslintignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="9052d1ae-8208-45d1-84f3-8d2660ebfe4f" name="Default" comment="init the base plugins">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/msg/20180516.txt" afterPath="$PROJECT_DIR$/log/msg/20180516.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/base/menu.vue" afterPath="$PROJECT_DIR$/src/renderer/components/base/menu.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/cataLog/index.vue" afterPath="$PROJECT_DIR$/src/renderer/components/cataLog/index.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/personalNote/index.vue" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/personalNote/noteEditor.vue" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/noteEditor.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/personalNote/noteItem.vue" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/noteItem.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/components/personalNote/noteItemList.vue" afterPath="$PROJECT_DIR$/src/renderer/components/personalNote/noteItemList.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/router/index.js" afterPath="$PROJECT_DIR$/src/renderer/router/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/renderer/store/mutation-types.js" afterPath="$PROJECT_DIR$/src/renderer/store/mutation-types.js" />
     </list>
     <ignored path="elevue-Note.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -392,8 +42,8 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+            <state relative-caret-position="154">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding>
                 <element signature="e#343#402#0" expanded="true" />
               </folding>
@@ -411,21 +61,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="menu.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/renderer/components/base/menu.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+            <state relative-caret-position="216">
+              <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/renderer/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="308">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -434,8 +84,8 @@
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/renderer/components/cataLog/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-202">
-              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            <state relative-caret-position="198">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -494,7 +144,6 @@
         <option value="$PROJECT_DIR$/src/renderer/assets/css/main.css" />
         <option value="$PROJECT_DIR$/src/renderer/components/toolBar/Index.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/mainBody/index.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/components/cataLog/index.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/cataLog/newCataLogDialog.vue" />
         <option value="$PROJECT_DIR$/src/renderer/dal/catalogdal.js" />
         <option value="$PROJECT_DIR$/src/renderer/business/cataLogOperatore.js" />
@@ -503,13 +152,14 @@
         <option value="$PROJECT_DIR$/.eslintignore" />
         <option value="$PROJECT_DIR$/src/renderer/components/personalNote/noteEditor.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/personalNote/noteItem.vue" />
-        <option value="$PROJECT_DIR$/src/renderer/components/personalNote/index.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/personalNote/noteItemList.vue" />
         <option value="$PROJECT_DIR$/.electron-vue/webpack.renderer.config.js" />
         <option value="$PROJECT_DIR$/src/renderer/store/mutation-types.js" />
         <option value="$PROJECT_DIR$/src/plugins/kindeditor.js" />
         <option value="$PROJECT_DIR$/src/plugins/kindeditor/kindeditor.js" />
         <option value="$PROJECT_DIR$/src/renderer/router/index.js" />
+        <option value="$PROJECT_DIR$/src/renderer/components/personalNote/index.vue" />
+        <option value="$PROJECT_DIR$/src/renderer/components/cataLog/index.vue" />
         <option value="$PROJECT_DIR$/src/renderer/components/base/menu.vue" />
       </list>
     </option>
@@ -804,6 +454,22 @@
     <property name="nodejs_interpreter_path" value="C:\Program Files\nodejs\node" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="E:\My\GitProject\elevue-Note\node_modules\mocha" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="123" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="152" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="152" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="945" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="140" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="147" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="146" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="939" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -891,7 +557,7 @@
       <workItem from="1526024100596" duration="2666000" />
       <workItem from="1526258365960" duration="45671000" />
       <workItem from="1526455843588" duration="2681000" />
-      <workItem from="1526459156380" duration="3152000" />
+      <workItem from="1526459156380" duration="4077000" />
     </task>
     <task id="LOCAL-00001" summary="init the base plugins">
       <created>1525765280611</created>
@@ -911,18 +577,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81576000" />
+    <option name="totallyTimeSpent" value="82501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18124342" sideWeight="0.7676923" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18124342" sideWeight="0.7683109" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2972973" sideWeight="0.29083246" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18124342" sideWeight="0.23230769" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3008658" sideWeight="0.49578503" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2972973" sideWeight="0.70916754" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27675676" sideWeight="0.26080084" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18124342" sideWeight="0.2316891" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27675676" sideWeight="0.73919916" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2972973" sideWeight="0.70916754" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52272725" sideWeight="0.6348788" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -958,7 +624,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/118_4_2_14_36.txt" />
     <entry file="file://$PROJECT_DIR$/src/renderer/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1312,7 +977,7 @@
         <state relative-caret-position="44">
           <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
           <folding>
-            <element signature="e#842#893#0" expanded="true" />
+            <element signature="e#842#893#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1322,7 +987,7 @@
         <state relative-caret-position="266">
           <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
           <folding>
-            <element signature="e#1092#1129#0" expanded="true" />
+            <element signature="e#1092#1129#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1345,32 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-          <folding>
-            <element signature="e#343#402#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/cataLog/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-202">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/renderer/components/base/menu.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/components/mainBody/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1379,10 +1018,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/common/evenBus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/renderer/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="308">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/personalNote/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="e#343#402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/cataLog/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/renderer/components/base/menu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
           <folding />
         </state>
       </provider>

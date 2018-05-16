@@ -485,3 +485,30 @@
   open: true,
   filename: 'C:\\Users\\Administrator\\AppData\\Roaming\\Electron\\dataBase\\resdb_default.exb',
   mode: 6 }
+[2018-05-16 17:28:36.279] [DEBUG] logDebug - require sqlite3
+[2018-05-16 17:28:36.459] [DEBUG] logDebug - localstorage path:C:\Users\Administrator\AppData\Roaming\Electron\default
+[2018-05-16 17:28:36.461] [DEBUG] logDebug - init localstorage path success
+[2018-05-16 17:28:36.929] [DEBUG] logDebug - start to create sqlite table
+[2018-05-16 17:28:37.072] [DEBUG] logDebug - open db success
+[2018-05-16 17:28:37.073] [DEBUG] logDebug - Database {
+  open: true,
+  filename: 'C:\\Users\\Administrator\\AppData\\Roaming\\Electron\\dataBase\\resdb_default.exb',
+  mode: 6 }
+[2018-05-16 17:28:45.982] [DEBUG] logDebug - require sqlite3
+[2018-05-16 17:28:46.150] [DEBUG] logDebug - localstorage path:C:\Users\Administrator\AppData\Roaming\Electron\default
+[2018-05-16 17:28:46.151] [DEBUG] logDebug - init localstorage path success
+[2018-05-16 17:28:46.684] [DEBUG] logDebug - start to create sqlite table
+[2018-05-16 17:28:46.873] [DEBUG] logDebug - open db success
+[2018-05-16 17:28:46.873] [DEBUG] logDebug - Database {
+  open: true,
+  filename: 'C:\\Users\\Administrator\\AppData\\Roaming\\Electron\\dataBase\\resdb_default.exb',
+  mode: 6 }
+[2018-05-16 17:32:16.039] [DEBUG] logDebug - require sqlite3
+[2018-05-16 17:32:16.209] [DEBUG] logDebug - localstorage path:C:\Users\Administrator\AppData\Roaming\Electron\default
+[2018-05-16 17:32:16.210] [DEBUG] logDebug - init localstorage path success
+[2018-05-16 17:32:16.701] [DEBUG] logDebug - start to create sqlite table
+[2018-05-16 17:32:16.901] [DEBUG] logDebug - open db success
+[2018-05-16 17:32:16.901] [DEBUG] logDebug - Database {
+  open: true,
+  filename: 'C:\\Users\\Administrator\\AppData\\Roaming\\Electron\\dataBase\\resdb_default.exb',
+  mode: 6 }

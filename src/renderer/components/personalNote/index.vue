@@ -32,7 +32,7 @@
 <style type="text/css">
   #note{
     display:-webkit-box;
-    width:100%;
+    float: left;
     height: 100%;
   }
   .noteLeft {
