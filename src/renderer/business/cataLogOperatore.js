@@ -4,8 +4,8 @@
 import catalogdal from '../dal/catalogdal'
 import documentdal from '../dal/documentdal'
 import appConfig from '../config/appConfig'
+import util from '../common/util'
 
-var util = require('../common/util')
 var enumType = require('../model/enumtype')
 
 export default {
@@ -13,6 +13,18 @@ export default {
   getOneCataLogInfo: (uuid) => {
     return new Promise((resolve, reject) => {
       catalogdal.getOne(uuid, (err, row) => {
+        if (err) {
+          reject(err)
+        } else {
+          resolve(row)
+        }
+      })
+    })
+  },
+  // 根据uuid获取catalog的信息
+  getOneCataLogAllChianInfo: (uuid, item) => {
+    return new Promise((resolve, reject) => {
+      catalogdal.getOneAllChild(uuid, item, (err, row) => {
         if (err) {
           reject(err)
         } else {

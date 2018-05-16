@@ -15,9 +15,9 @@ import config from '../config/index'
 import ipcMessage from '../common/ipcMessage'
 import renderUtil from '../common/renderutil'
 import {cataLogType} from '../model/enumtype'
+import util from '../common/util'
 
 var db = sqlite.sqliteDb
-var util = require('../common/util')
 const StringDecoder = require('string_decoder').StringDecoder
 const decoder = new StringDecoder('binary')
 

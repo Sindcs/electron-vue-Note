@@ -2,6 +2,15 @@
   margin: 0px;
   padding: 0px;
 }
+html,body{
+  height: 100%;
+}
+.full-height{
+  height: 100%;
+}
 ul, ol,li{
   list-style: none
+}
+#app{
+  height: 100%;
 }

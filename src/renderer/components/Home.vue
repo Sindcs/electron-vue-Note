@@ -1,12 +1,12 @@
 <template>
-  <div id="wrapper">
-    <main>
+  <div id="wrapper" class="full-height">
+    <main class="full-height">
       <toolBar></toolBar>
       <mainBody></mainBody>
-      <div class="left-side">
+      <!--<div class="left-side">
         <el-button type="success" icon="el-icon-check" v-on:click="rebuild">重构指南数据</el-button>
         <el-button type="success" icon="el-icon-check" v-on:click="restore">还原数据</el-button>
-      </div>
+      </div>-->
     </main>
   </div>
 </template>

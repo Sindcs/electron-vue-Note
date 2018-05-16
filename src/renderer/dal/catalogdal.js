@@ -76,11 +76,8 @@ export default {
     )
   },
   // 获取一个文件夹的所有子目录
-  getOneAllChild: (uuid, isGetMoniter, callback) => {
-    let selectSql = 'SELECT * FROM cataLog WHERE parentCataLogId = ? ORDER BY dateCreated'
-    if (!isGetMoniter) {
-      selectSql = 'SELECT * FROM cataLog WHERE parentCataLogId = ? AND isMonitored = 0 ORDER BY dateCreated'
-    }
+  getOneAllChild: (uuid, item, callback) => {
+    let selectSql = 'SELECT * FROM cataLog WHERE parentCataLogId = ? AND isMonitored = 0 ORDER BY dateCreated'
     db.all(selectSql,
       [uuid], (err, rows) => {
         if (err) {
@@ -88,11 +85,12 @@ export default {
           log.writeErr(err)
           callback(err, null)
         } else {
-          /* if (rows.length > 0) {
-           for (let i = 0; i < rows.length; i++) {
-           this['a'].getOneAllChild(rows[i].uuid, callback)
+           if (rows.length > 0) {
+             for (let i = 0; i < rows.length; i++) {
+               this['a'].getOneAllChild(rows[i].uuid, rows[i], callback)
+             }
            }
-           } */
+          item.childList = rows
           callback(null, rows)
         }
       }

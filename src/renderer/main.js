@@ -6,7 +6,13 @@ import router from './router'
 import store from './store'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk'
+import modal from './components/base/modal.vue'
+import dbinit from './dal/dbinit'
 
+dbinit.initDatabase()
+dbinit.initTable().catch(err => {
+  alert(err)
+})
 Vue.use(Element)
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$ajax = axios
@@ -54,6 +60,8 @@ let confirm = function (param) {
 }
 Vue.prototype.$alert = alert
 Vue.prototype.$confirm = confirm
+
+Vue.component('modal', {...modal})
 
 require('./assets/css/main.css')
 

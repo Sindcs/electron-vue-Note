@@ -42,28 +42,6 @@ dbinit.initTable = function () {
           }
         }
       )
-      // create favorites
-      db.run(`CREATE TABLE IF NOT EXISTS favorites 
-        (
-          uuid VARCHAR(36) PRIMARY KEY,
-          documentId VARCHAR(36),
-          type VARCHAR(6),
-          isChanged integer,
-          isMonitored integer,
-          favoritesTimes INTEGER
-        )`,
-        function (err) {
-          if (err) {
-            log.writeErr(`FAIL on creating table favorites:${err}`)
-            reject(err)
-          } else {
-            i++
-            if (i === 10) {
-              resolve()
-            }
-          }
-        }
-      )
       // create cataLog
       db.run(`CREATE TABLE IF NOT EXISTS cataLog 
         (

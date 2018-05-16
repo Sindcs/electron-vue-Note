@@ -46,7 +46,7 @@
       }
     }
     li:hover{
-      background-color: #EFE8D9;
+      background-color: #D9E8EF;
     }
   }
 </style>
