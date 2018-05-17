@@ -50,8 +50,9 @@
     width: 280px;
     float: left;
     height: calc(100% - 20px);
-    padding: 10px 0px;
+    padding: 5px 0px;
     font-size: 18px;
+    user-select: none;
     color: #ffffff;
     background-color: #2A333C;
   }

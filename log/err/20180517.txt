@@ -1,0 +1,11 @@
+[2018-05-17 14:54:11.066] [ERROR] logErr - { Error: Cannot find module "node-analyzer"
+    at webpackMissingModule (webpack-internal:///137:11:79)
+    at eval (webpack-internal:///137:11:169)
+    at Object.<anonymous> (http://localhost:9080/renderer.js:1594:1)
+    at __webpack_require__ (http://localhost:9080/renderer.js:680:30)
+    at fn (http://localhost:9080/renderer.js:90:20)
+    at eval (webpack-internal:///136:18:78)
+    at Object.<anonymous> (http://localhost:9080/renderer.js:1587:1)
+    at __webpack_require__ (http://localhost:9080/renderer.js:680:30)
+    at fn (http://localhost:9080/renderer.js:90:20)
+    at eval (webpack-internal:///258:9:82) code: 'MODULE_NOT_FOUND' }

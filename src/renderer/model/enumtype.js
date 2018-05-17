@@ -93,3 +93,43 @@ export const quikDirType = {
   setting: 'setting',
   recycle: 'recycle'
 }
+// 执行结果状态码
+export const ResultCode = {
+  Success: 200,
+  Failure: 500,
+  Exist: 300,
+  NotFund: 400,
+  NotSupport: 603
+}
+
+// 消息类型
+export const MessageType = {
+  groupApply: '1',
+  groupApplyHandel: '01',
+  system: '2',
+  privateChat: 'chat',
+  groupChat: 'groupchat'
+}
+
+export const GroupApplyType = {
+  apply: 0,
+  invite: 1
+}
+
+// 文档存储方式
+export const docStoreType = {
+  document: 0,
+  dfs: 1,
+  general: 2
+}
+
+export const fileUpStatus = {
+  notEnoughSpace: 1,
+  overLimit: 2
+}
+// 来源类型
+export const resourceType = {
+  toolAnalyze: 0,
+  middle: 1,
+  share: 2
+}

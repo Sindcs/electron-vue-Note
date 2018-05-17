@@ -26,8 +26,11 @@
 </template>
 
 <script type="text/ecmascript-6">
+  import util from '../../common/util'
+  import log from '../../foundation/log'
   import noteItem from './noteItem.vue'
   import scrollPage from '../common/scrollPage.vue'
+  import search from '../../business/search'
 
   export default {
     components: {
@@ -53,6 +56,32 @@
         lastSelectItemDom: null,
         isShowRecl: false,
         itemList: []
+      }
+    },
+    mounted () {
+      this.$nextTick(() => {
+        this.cataLogId = this.$route.params.uuid
+      })
+    },
+    watch: {
+      '$route.params.uuid': function (val) {
+        this.cataLogId = val
+      },
+      'cataLogId': function (val) {
+        let keywords = ''
+        if (val) {
+          search.searchNodeList(val, keywords).then(res => {
+            for (let i = 0; i < res.length; i++) {
+              res[i].title = util.tagColor(res[i].title, keywords)
+              res[i].abstracts = util.tagColor(res[i].abstracts, keywords)
+            }
+            this.itemList = res
+            this.router()
+          }).catch(err => {
+            console.log(err)
+            log.writeErr(err)
+          })
+        }
       }
     }
   }
@@ -187,7 +216,7 @@
     margin: 8px 0 5px;
     font-size:13px;
     color:#000000;
-    select: none;
+    user-select: none;
     overflow: hidden;
     span{
       display: block;
@@ -223,7 +252,7 @@
     display:block !important;
   }
   .noteListCon{
-    -webkit-flex: 1;
+    flex: 1;
     height: calc(100% - 70px);
   }
   @keyframes rotate{
