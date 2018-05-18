@@ -7,7 +7,7 @@
     <div v-if="isShowAdd">
       <new-cataLog-dialog @close="addClose" :parentInfo="item" :isEdit="isEdit"></new-cataLog-dialog>
     </div>
-    <ul class ="collapse in tree-menu" v-if="isShow">
+    <ul class ="tree-menu" v-if="isShow">
       <sd-menu v-for="childItem in item.childList" :propItem="childItem" :key="childItem.uuid"></sd-menu>
     </ul>
   </li>
@@ -94,14 +94,24 @@
  .menu-li {
    a {
      cursor: pointer;
-     font-size: 18px;
      height: 25px;
-     padding: 2px 0px;
+     padding: 1px 0px;
+     line-height: 25px;
      font-weight: 400;
      display: block;
    }
    a:hover{
-     background-color: #4A5D6B;
+     background-color: rgb(80, 97, 109);
+   }
+   .tree-menu {
+     font-size: 13px;
+     a{
+        height: 20px;
+        line-height: 20px;
+        font-family: "宋体";
+        font-weight: 300;
+        padding: 2px 0px;
+     }
    }
  }
 </style>
