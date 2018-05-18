@@ -262,7 +262,7 @@ let patent = {
   sourceUrl: '',
   filePath: '', // 文档位置
   downloadPath: '', // 文档下载位置
-  owner: '',  // 专利所有者
+  owner: '', // 专利所有者
   abstracts: '',
   independentClaim: '', // 主权项
   patentNum: null, // 专利号

@@ -5,7 +5,7 @@
 
 // 标签
 const tag = {
-  uuid: 1,   // 主键
+  uuid: 1, // 主键
   name: 'test', // 名称（唯一）
   dateCreated: Date.now() // 创建时间
 }
@@ -64,7 +64,7 @@ const favorites = {
 const resource = {
   uuid,
   ownerId, // 笔记id
-  mine,   // 类型
+  mine, // 类型
   width,
   height, // 高度
   sourceUrl, // 资源来源url
