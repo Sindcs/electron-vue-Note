@@ -59,11 +59,8 @@
     "electron-debug": "^1.5.0",
     "element-ui": "^2.3.7",
     "getmac": "^1.4.1",
-<<<<<<< HEAD
     "jquery": "^3.3.1",
     "log4js": "^1.1.1",
-=======
->>>>>>> 8bfa37036949516845114e5f86073f908c6c93a7
     "mysql": "^2.15.0",
     "nedb-core": "^3.0.6",
     "node-analyzer": "^5.0.1",
