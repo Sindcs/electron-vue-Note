@@ -21,6 +21,11 @@ export default new Router({
               component: require('@/components/personalNote/noteEditor').default
             }
           ]
+        },
+        {
+          path: '/newNode',
+          name: 'newNode',
+          component: require('@/components/personalNote/noteEditor').default
         }
       ]
     },

@@ -83,6 +83,11 @@
           })
         }
       }
+    },
+    methods: {
+      deleteNote () {
+        
+      }
     }
   }
 </script>

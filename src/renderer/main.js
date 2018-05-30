@@ -63,8 +63,8 @@ Vue.prototype.$confirm = confirm
 
 Vue.component('modal', {...modal})
 
-require('./assets/css/main.css')
-
+import './assets/css/iconfont/iconfont.css'
+import './assets/css/main.css'
 /* eslint-disable no-new */
 new Vue({
   components: { App },

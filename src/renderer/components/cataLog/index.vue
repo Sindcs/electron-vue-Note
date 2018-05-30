@@ -49,7 +49,7 @@
   .catalog{
     width: 280px;
     float: left;
-    height: calc(100% - 20px);
+    height: calc(100% - 10px);
     padding: 5px 0px;
     font-size: 18px;
     user-select: none;

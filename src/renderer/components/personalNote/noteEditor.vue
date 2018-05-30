@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 100%;height: 100%">
+  <div style="height: 100%">
     <div  :uuid="uuid" class='noteEditor' ref="noteEditor" v-show="isEditor">
       <div class="nodeheard">
         <input type="text" v-model="title" @click="click" placeholder="请输入笔记名...">
@@ -51,13 +51,29 @@
         kindFocused: false
       }
     },
-    props: ['propUuid']
+    props: ['propUuid'],
+    methods: {
+      click () {
+
+      },
+      setSaveContent () {
+
+      },
+      kindRead () {
+
+      },
+      changed () {
+
+      },
+      kindFocus () {
+
+      }
+    }
   }
 </script>
 
 <style lang="scss" rel="stylesheet/scss" scoped>
   .noteEditor{
-    width:100%;
     height:100%;
     overflow:hidden;
     display: -webkit-flex;
@@ -88,7 +104,7 @@
     color: #666;
     font-weight: bold;
     height: 30px;
-    margin:0 0 5px;
+    margin:0 0 1px;
     width: 100%;
     padding-left:10px;
     text-align:left;

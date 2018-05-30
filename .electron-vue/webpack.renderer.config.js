@@ -54,7 +54,14 @@ let rendererConfig = {
       },
       {
         test: /\.js$/,
-        use: 'babel-loader',
+        use: {  
+          loader: 'babel-loader',  
+          options: {  
+              "presets": [  
+                  ['es2015', {modules: false}]  
+              ],
+          }  
+        },
         exclude: /node_modules/
       },
       {

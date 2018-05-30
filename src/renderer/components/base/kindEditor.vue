@@ -1,12 +1,12 @@
 <template>
-  <div id="note-editor" style="width: 100%; height: 100%">
+  <div id="note-editor" style="height: 100%">
     <textarea :id="thisTextareaId" class="kindeditor-form-control">
     </textarea>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-  import { loadWriteContentK } from '../../../plugins/kindeditor'
+  import { loadWriteContentK } from '../../common/kindeditor'
   import util from '../../common/util'
 
   export default {

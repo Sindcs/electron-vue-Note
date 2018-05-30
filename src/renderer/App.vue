@@ -5,6 +5,8 @@
 </template>
 
 <script>
+  require("./assets/css/iconfont/iconfont.css")
+  
   export default {
     name: 'elevue-note'
   }

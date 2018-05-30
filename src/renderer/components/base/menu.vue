@@ -71,6 +71,12 @@
             this.isEdit = true
           }
         }))
+        noteRightMenu.append(new MenuItem({
+          label: '创建笔记',
+          click: () => {
+            this.$router.push({name: 'newNode', params:{ isEditor: true }})
+          }
+        }))
         noteRightMenu.popup(remote.getCurrentWindow())
       },
       addClose (item) {
