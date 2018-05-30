@@ -18,7 +18,7 @@ export default new Router({
             {
               path: '/nodeDetail/:uuid',
               name: 'nodeDetail',
-              component: require('@/components/personalNote/noteEditor')
+              component: require('@/components/personalNote/noteEditor').default
             }
           ]
         }
