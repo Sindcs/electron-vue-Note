@@ -1,4 +1,6 @@
 .DS_Store
+./vscode
+./idea
 dist/electron/*
 dist/web/*
 build/*
@@ -8,5 +10,6 @@ node_modules/
 npm-debug.log
 npm-debug.log.*
 tempImage/*
+log/*
 thumbs.db
 !.gitkeep
