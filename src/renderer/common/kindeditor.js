@@ -3,7 +3,6 @@
  */
 // 加载kindeditor
 import '../../plugins/kindeditor/kindeditor'
-import '../../plugins/kindeditor/themes/default/default.css'
 import '../../plugins/kindeditor/themes/simple/simple.css'
 import '../../plugins/kindeditor/prettify.css'
 import '../../plugins/kindeditor/prettify'
