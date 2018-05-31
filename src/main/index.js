@@ -45,7 +45,7 @@ function createWindow () {
     height: 680,
     width: 800,
     frame: true,
-    show: true
+    show: false
   })
   mainWindow.loadURL(winURL)
   workerWindow.loadURL(workerWinURL)
