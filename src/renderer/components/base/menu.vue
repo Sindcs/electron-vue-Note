@@ -51,7 +51,7 @@
       selectOne (item) {
         this.$store.commit(types.CHANGE_CURRENTSELECT_CATLOGITEM, {
           isShow: false,
-          cataLogId: this.item.cataLogId,
+          uuid: this.item.uuid,
           parentInfo: this.item
         })
       },
@@ -90,6 +90,7 @@
         }
       },
       router () {
+        this.selectOne(this.item)
         this.$router.push({name: 'nodeIndex', params: {uuid: this.item.uuid}})
       }
     }

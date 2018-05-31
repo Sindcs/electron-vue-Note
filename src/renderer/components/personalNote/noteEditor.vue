@@ -25,6 +25,13 @@
 <script type="text/ecmascript-6">
   import kineditor from '../base/kindEditor.vue'
   import noteScan from './noteScan.vue'
+  import noteOperatore from '../../business/noteOperatore'
+  import log from '../../foundation/log'
+  import util from '../../common/util'
+  import dialog from '../../common/dialog'
+  import {mapGetters} from 'vuex'
+  
+  var cataLogType = require('../../model/enumtype').cataLogType
 
   export default {
     components: {
@@ -52,21 +59,140 @@
       }
     },
     props: ['propUuid'],
+    computed: {
+      ...mapGetters([
+        'currentSelectCatalogItem',
+      ])
+    },
     methods: {
-      click () {
-
+      kindRead (editor) {
+        this.kindEditor = editor
       },
-      setSaveContent () {
-
+      click (catalogItem) {
+        if (catalogItem) {
+          if (!this.title) {
+            this.setTitle()
+          }
+          this.save(catalogItem)
+        } else {
+          if (this.title && (this.title !== this.lastTitle)) {
+            this.lastTitle = this.title
+            this.saveTitle()
+          } else if (!this.title && this.isChanged) {
+            this.setTitle()
+            // this.saveTitle()
+            this.save(catalogItem)
+          }
+        }
       },
-      kindRead () {
-
+      setTitle () {
+        let val = this.kindEditor.html()
+        if (val) {
+          let contentArray = val.replace(/<[^>]+>/g, '').split('\n')
+          if (contentArray && contentArray.length > 0) {
+            for (let i = 0; i < contentArray.length; i++) {
+              let r = contentArray[i].replace(/(^\s*)/g, '').replace(/(\s*$)/g, '').replace(/(&nbsp;)+/g, '').replace(/[\t\f]/g, '')
+              if (r) {
+                this.title = r
+                this.lastTitle = this.title
+                break
+              }
+            }
+          } else if (val.indexOf('<img') >= 0) {
+            this.title = '我的图片'
+            this.lastTitle = this.title
+          }
+        }
+      },
+      setSaveContent (val) {
+        this.saveContent = val
+        this.save()
+      },
+      saveTitle () {
+        if (this.uuid && this.title) {
+          noteOperatore.changTitle(this.uuid, this.title).then((rs) => {
+            // this.$store.commit(types.CHANGE_NOTE_ITEM, rs)
+          }).catch((err) => {
+            console.log(err)
+            log.writeErr(`noteEditor saveTitle error: ${err}`)
+          })
+        }
+      },
+      save (catalogItem) {
+        if (!this.isCreatting) {
+          let catalogId = this.currentSelectCatalogItem.uuid
+          if (catalogItem && catalogItem.uuid) {
+            catalogId = catalogItem.uuid
+          }
+          this.isCreatting = true
+          let val = this.kindEditor.html()
+          /* if (!val) {
+            val = this.kindEditor.value
+          } */
+          if (this.title && val) {
+            this.isChanged = false
+            if (this.uuid) {
+              var item = {
+                content: val,
+                abstracts: util.getAbstracts(val, this.title),
+                title: this.title,
+                cataLogId: catalogId
+              }
+              noteOperatore.changeNote(this.uuid, item).then(rs => {
+                // this.content = rs.content
+                this.isCreatting = false
+                // this.$store.commit(types.CHANGE_NOTE_ITEM, rs)
+              }).catch(err => {
+                console.log(err)
+                this.isCreatting = false
+                log.writeErr(`noteEditor save error: ${err}`)
+              })
+            } else {
+              noteOperatore.addOneNote({
+                content: val,
+                author: '',
+                source: '',
+                sourceUrl: '',
+                size: 0,
+                title: this.title,
+                abstracts: util.getAbstracts(val, this.title),
+                tags: '',
+                cataLogType: cataLogType.personalNote,
+                cataLogId: catalogId
+              }).then((note) => {
+                this.uuid = note.uuid
+                if (note.content) {
+                  this.content = note.content
+                }
+                try {
+                  if (catalogItem && catalogItem.uuid) {
+                    // documentHelper.changCataLogDetail(catalogItem)
+                  } else {
+                    // documentHelper.changCataLogDetail(this.currentSelectCatalogItem)
+                  }
+                } catch (err) {
+                  console.log(err)
+                }
+                this.isCreatting = false
+              }).catch(err => {
+                this.isCreatting = false
+                console.log(err)
+                log.writeErr(`noteEditor save error: ${err}`)
+              })
+            }
+          } else {
+            this.isCreatting = false
+          }
+        }
+      },
+      getFocus () {
+        this.$refs.noteEditor.querySelector('.tagInput').querySelector('.input').focus()
       },
       changed () {
-
+        this.isChanged = true
       },
       kindFocus () {
-
+        this.kindFocused = true
       }
     }
   }

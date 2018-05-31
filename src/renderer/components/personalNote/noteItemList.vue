@@ -31,6 +31,11 @@
   import noteItem from './noteItem.vue'
   import scrollPage from '../common/scrollPage.vue'
   import search from '../../business/search'
+  import {mapGetters} from 'vuex'
+  import cataLogOperatore from '../../business/cataLogOperatore'
+  import noteOperatore from '../../business/noteOperatore'  
+  
+  var cataLogType = require('../../model/enumtype').cataLogType
 
   export default {
     components: {
@@ -55,22 +60,51 @@
         isShowDele: false,
         lastSelectItemDom: null,
         isShowRecl: false,
-        itemList: []
+        itemList: [],
+        searchInfo: {}
       }
     },
     mounted () {
       this.$nextTick(() => {
-        this.cataLogId = this.$route.params.uuid
+        this.cataLogId = this.currentSelectCatalogItem.uuid
       })
     },
+     computed: {
+      ...mapGetters([
+        'currentSelectCatalogItem',
+      ])
+    },
     watch: {
-      '$route.params.uuid': function (val) {
-        this.cataLogId = val
+      'currentSelectCatalogItem': function (val) {
+        this.cataLogId = val.uuid
+        this.pageIndex = 0
+        this.getNodeList(true)
+      }
+    },
+    methods: {
+      deleteNote () {
+        
       },
-      'cataLogId': function (val) {
-        let keywords = ''
-        if (val) {
-          search.searchNodeList(val, keywords).then(res => {
+      changSelectStyle () {
+        if (this.itemList.length !== 0) {
+          if (this.lastSelectItemDom) {
+            this.lastSelectItemDom.setAttribute('style', '')
+          }
+          this.$nextTick(() => {
+            let nodeItemDom = this.$refs.noteItemCon
+            if (noteItem && nodeItemDom) {
+              let dom = nodeItemDom.querySelector('.noteItem')
+              if (dom) {
+                dom.setAttribute('style', 'background:rgba(0, 0, 0, 0.04);')
+                this.lastSelectItemDom = dom
+              }
+            }
+          })
+        }
+      },
+      filter (keywords) {
+        if (this.cataLogId) {
+          search.searchNodeList(this.cataLogId, keywords).then(res => {
             for (let i = 0; i < res.length; i++) {
               res[i].title = util.tagColor(res[i].title, keywords)
               res[i].abstracts = util.tagColor(res[i].abstracts, keywords)
@@ -82,12 +116,73 @@
             log.writeErr(err)
           })
         }
-      }
-    },
-    methods: {
-      deleteNote () {
-        
-      }
+      },
+      getNewData () {
+        this.pageIndex++
+        this.getNodeList()
+      },
+      loading (res) {
+        this.isGetPage = false
+        if (res.length !== 0) {
+          if (this.pageIndex === 0) {
+            this.itemList.push(...res)
+          } else if (this.pageIndex > 0) {
+            this.isLoad = true
+            setTimeout(() => {
+              this.itemList.push(...res)
+              this.isLoad = false
+            }, 100)
+          }
+        } else {
+          this.isLoad = false
+          if (this.pageIndex > 0) {
+            this.pageIndex = this.pageIndex - 1
+          }
+        }
+      },
+      getNodeList (isReload) {
+        if (this.isGetData) {
+          return
+        }
+        this.isGetData = true
+        if (isReload) {
+          this.itemList = []
+        }
+        let cataLogId = this.cataLogId
+        let queryParam = this.searchInfo.query
+        if (cataLogId === cataLogType.personalNote) {
+          cataLogId = ''
+        }
+        cataLogOperatore.getOneCataLogInfo(this.cataLogId).then(rs => {
+          if (rs) {
+            this.cataLogInfo = rs
+          } else {
+            this.cataLogInfo = {
+              name: '[全部目录]'
+            }
+          }
+        })
+        noteOperatore.getByCatalogId(cataLogId, cataLogType.personalNote, queryParam, this.pageIndex, this.pageSize).then(res => {
+          this.loading(res.nodes)
+          this.isGetData = false
+          this.count = res.totalCount
+          if (isReload) {
+            this.changSelectStyle()
+            this.router()
+          }
+        }).catch(err => {
+          this.isGetData = false
+          console.log(err)
+          log.writeErr(err)
+        })
+      },
+      router () {
+        if (this.itemList && this.itemList.length) {
+          let item = this.itemList[0]
+          this.$router.push({name: 'nodeDetail', params: {uuid: item.cataLogId}})
+        }
+        this.$emit('setCurrentList', this.itemList)
+      },
     }
   }
 </script>

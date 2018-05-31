@@ -6,7 +6,7 @@
 </template>
 
 <script type="text/ecmascript-6">
-  import { loadWriteContentK } from '../../common/kindeditor'
+  import { loadWriteContentK } from '../../../plugins/kindeditor'
   import util from '../../common/util'
 
   export default {

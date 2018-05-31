@@ -1,0 +1,54 @@
+[2018-05-31 10:27:34.854] [ERROR] logErr - noteEditor save error: cant't find catalogInfo
+[2018-05-31 10:27:40.608] [ERROR] logErr - noteEditor save error: cant't find catalogInfo
+[2018-05-31 10:28:26.418] [ERROR] logErr - noteEditor save error: cant't find catalogInfo
+[2018-05-31 10:29:34.354] [ERROR] logErr - noteEditor save error: cant't find catalogInfo
+[2018-05-31 10:30:30.106] [ERROR] logErr - noteEditor save error: cant't find catalogInfo
+[2018-05-31 10:31:28.782] [ERROR] logErr - noteEditor save error: cant't find catalogInfo
+[2018-05-31 10:33:21.780] [ERROR] logErr - noteEditor save error: cant't find catalogInfo
+[2018-05-31 10:33:30.583] [ERROR] logErr - noteEditor save error: cant't find catalogInfo
+[2018-05-31 10:33:37.222] [ERROR] logErr - noteEditor save error: cant't find catalogInfo
+[2018-05-31 10:35:00.327] [ERROR] logErr - noteEditor save error: Error: Could not call remote function ''. Check that the function signature is correct. Underlying error: Error processing argument at index 0, conversion failure from undefined
+Error: Could not call remote function ''. Check that the function signature is correct. Underlying error: Error processing argument at index 0, conversion failure from undefined
+    at callFunction (E:\My\GitProject\elevue-Note\node_modules\electron\dist\resources\electron.asar\browser\rpc-server.js:257:11)
+    at EventEmitter.<anonymous> (E:\My\GitProject\elevue-Note\node_modules\electron\dist\resources\electron.asar\browser\rpc-server.js:357:5)
+    at emitMany (events.js:146:13)
+    at EventEmitter.emit (events.js:223:7)
+    at WebContents.<anonymous> (E:\My\GitProject\elevue-Note\node_modules\electron\dist\resources\electron.asar\browser\api\web-contents.js:275:13)
+    at emitTwo (events.js:125:13)
+    at WebContents.emit (events.js:213:7)
+[2018-05-31 11:00:31.209] [ERROR] logErr - TypeError: __WEBPACK_IMPORTED_MODULE_8__business_documentOperatore__.a.formatTagQueryUuids is not a function
+    at eval (webpack-internal:///111:722:84)
+    at Promise (<anonymous>)
+    at F (webpack-internal:///11:36:28)
+    at Object.getByCatalogId (webpack-internal:///111:714:12)
+    at VueComponent.getNodeList (webpack-internal:///106:144:80)
+    at VueComponent.currentSelectCatalogItem (webpack-internal:///106:69:12)
+    at Watcher.run (webpack-internal:///1:3234:19)
+    at flushSchedulerQueue (webpack-internal:///1:2982:13)
+    at Array.eval (webpack-internal:///1:1838:12)
+    at MessagePort.flushCallbacks (webpack-internal:///1:1759:14)
+[2018-05-31 11:00:33.272] [ERROR] logErr - TypeError: __WEBPACK_IMPORTED_MODULE_8__business_documentOperatore__.a.formatTagQueryUuids is not a function
+    at eval (webpack-internal:///111:722:84)
+    at Promise (<anonymous>)
+    at F (webpack-internal:///11:36:28)
+    at Object.getByCatalogId (webpack-internal:///111:714:12)
+    at VueComponent.getNodeList (webpack-internal:///106:144:80)
+    at VueComponent.currentSelectCatalogItem (webpack-internal:///106:69:12)
+    at Watcher.run (webpack-internal:///1:3234:19)
+    at flushSchedulerQueue (webpack-internal:///1:2982:13)
+    at Array.eval (webpack-internal:///1:1838:12)
+    at MessagePort.flushCallbacks (webpack-internal:///1:1759:14)
+[2018-05-31 11:01:41.626] [ERROR] logErr - TypeError: __WEBPACK_IMPORTED_MODULE_8__business_documentOperatore__.a.formatTagQueryUuids is not a function
+    at eval (webpack-internal:///111:722:84)
+    at Promise (<anonymous>)
+    at F (webpack-internal:///11:36:28)
+    at Object.getByCatalogId (webpack-internal:///111:714:12)
+    at VueComponent.getNodeList (webpack-internal:///106:144:80)
+    at VueComponent.currentSelectCatalogItem (webpack-internal:///106:69:12)
+    at Watcher.run (webpack-internal:///1:3234:19)
+    at flushSchedulerQueue (webpack-internal:///1:2982:13)
+    at Array.eval (webpack-internal:///1:1838:12)
+    at MessagePort.flushCallbacks (webpack-internal:///1:1759:14)
+[2018-05-31 11:08:00.654] [ERROR] logErr - TypeError: _this4.changSelectStyle is not a function
+    at eval (webpack-internal:///106:149:18)
+    at <anonymous>

@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, ipcMain } from 'electron'
 
 /**
  * Set `__static` path to static files in production
@@ -11,10 +11,27 @@ if (process.env.NODE_ENV !== 'development') {
 }
 
 let mainWindow
+let workerWindow
 const winURL = process.env.NODE_ENV === 'development'
   ? `http://localhost:9080`
   : `file://${__dirname}/index.html`
+const workerWinURL = process.env.NODE_ENV === 'development'
+  ? `http://localhost:9090/worker.html`
+  : `file://${__dirname}/worker.html`
 
+const isSecondInstance = app.makeSingleInstance((commandLine, workingDirectory) => {
+// Someone tried to run a second instance, we should focus our window.
+  if (mainWindow) {
+    if (mainWindow.isMinimized()) {
+      mainWindow.restore()
+    }
+    mainWindow.focus()
+  }
+})
+
+if (isSecondInstance) {
+  app.quit()
+}
 function createWindow () {
   /**
    * Initial window options
@@ -24,13 +41,27 @@ function createWindow () {
     useContentSize: true,
     width: 1000
   })
-
+  workerWindow = new BrowserWindow({
+    height: 680,
+    width: 800,
+    frame: true,
+    show: false
+  })
   mainWindow.loadURL(winURL)
+  workerWindow.loadURL(workerWinURL)
 
   mainWindow.on('closed', () => {
     mainWindow = null
   })
 }
+
+ipcMain.on('getMainHandle-request', (event, arg) => {
+  event.sender.send('getMainHandle-response', {
+    mainHandel: mainWindow.getNativeWindowHandle(),
+    mainId: mainWindow.id,
+    workerId: workerWindow.id
+  })
+})
 
 app.on('ready', createWindow)
 

@@ -24,6 +24,9 @@
           "modules": false
         }],
         "stage-0"
+      ],
+      "ignore": [
+        "./src/plugins/kindeditor/kindeditor-min.js"
       ]
     },
     "web": {

@@ -2,7 +2,7 @@
  * Created by Sind on 2017/3/17.
  */
 // 加载kindeditor
-require('./kindeditor/kindeditor')
+require('./kindeditor/kindeditor-min')
 require('./kindeditor/themes/default/default.css')
 require('./kindeditor/themes/simple/simple.css')
 require('./kindeditor/prettify.css')
@@ -15,7 +15,6 @@ require('./kindeditor/plugins/table/table')
 require('./kindeditor/plugins/insertImage/insertImage')
 require('./kindeditor/plugins/quickformat/quickformat')
 require('./kindeditor/plugins/lineheight/lineheight')
-require('./kindeditor/themes/default/alertDialog.css')
 
 const path = require('path')
 var prehtml = ''
@@ -52,6 +51,7 @@ var loadEditor = function (width, heigth, editorItems, afterChange, afterFocus, 
     var options = {
       basePath: '../../plugins/kindeditor/',
       resizeType: resizeType,
+      skinsPath: '../../plugins/kindeditor/themes/skins/',
       useContextmenu: true,
       filterMode: false,
       afterFocus: function () {
