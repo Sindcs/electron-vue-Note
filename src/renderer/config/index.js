@@ -27,10 +27,10 @@ console.log('app data path: ' + app.getPath('userData'))
 export default {
   dbConnct: {
     mySql: {
-      host: '192.168.107.51',
-      user: 'root',
-      password: 'cnki',
-      database: 'hy_cpro'
+      host: '',
+      user: '',
+      password: '',
+      database: ''
     }
   },
   dbPath: {
@@ -40,15 +40,6 @@ export default {
     localstorage: path.join(app.getPath('userData'), ecpuserName)
   },
   hostPath: hostPath,
-  toolPath: {
-    pdfToXml: 'resources/tools/pdftoxml.exe',
-    pdfToHtml: 'resources/tools/pdftohtml.exe',
-    sunique: 'resources/lib/Suniqueid.exe',
-    updateTool: {
-      name: 'update.exe',
-      ini: 'update.ini'
-    }
-  },
   childProcess: {
     electronPath: electronPath,
     backworkerPath: backworkerPath

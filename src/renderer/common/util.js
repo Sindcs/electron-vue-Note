@@ -3,7 +3,6 @@
  */
 //const uuidV1 = require('uuid')
 var $ = require('jquery')
-var documentTypeDict = require('../config/baseDict').documentTypeDict
 var documentType = require('../model/enumtype').documentType
 const uuidV1 = require('uuid/v1')
 var crypto = require('crypto')
@@ -289,18 +288,6 @@ export default {
       }
     }
     return urlImgList
-  },
-  // 获取文档类型
-  getDocumentType: function (suffix) {
-    let type = documentType.other
-    for (let i = 0; i < documentTypeDict.length; i++) {
-      let val = documentTypeDict[i]
-      if (val.value.extension.indexOf(suffix) >= 0) {
-        type = val.key
-        break
-      }
-    }
-    return type
   },
   // 为关键字标记颜色red
   tagColor: (content, childStr) => {
