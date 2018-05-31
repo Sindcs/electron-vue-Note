@@ -40,7 +40,8 @@
           styleClass: `padding-left:${(this.propItem.cataLogChain.split('/').length) * 20}px`,
           childList: this.propItem.childList,
           childCount: this.propItem.childCount,
-          cataLogChain: this.propItem.cataLogChain
+          cataLogChain: this.propItem.cataLogChain,
+          type: this.propItem.type
         }
       }
     },
@@ -111,7 +112,7 @@
      background-color: rgb(80, 97, 109);
    }
    .tree-menu {
-     font-size: 13px;
+     font-size: 15px;
      a{
         height: 20px;
         line-height: 20px;

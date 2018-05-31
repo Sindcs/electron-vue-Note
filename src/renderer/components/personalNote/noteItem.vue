@@ -1,8 +1,8 @@
 <template>
-    <div class="noteItem" ref="noteItem"  :uuid="showItem.uuid" draggable="true" @dragstart="dragstart(showItem, $event)" @dragend="dragend">
+    <div class="noteItem" ref="noteItem"  :uuid="showItem.uuid" draggable="true" @dragstart="dragstart(showItem, $event)" @dragend="dragend" @click="router">
         <i class="icon3 iconfont icon-jiantou" title="笔记未同步..." v-if="item.isChanged"></i>
       <div class="wordDes">
-        <i class="pen iconfont icon-Shape-copy" :style="$theme.style.logoColor"></i>
+        <i class="pen iconfont icon-Shape-copy"></i>
         <p class="title" v-html="showItem.title">
         </p>
         <div class="detailCon">
@@ -69,6 +69,9 @@
         e.dataTransfer.clearData('text')
         this.eleDrag = null
         return false
+      },
+      router () {
+        this.$router.push({name: 'nodeDetail', params: {uuid: this.item.uuid, isEditor: true}})
       }
     }
   }

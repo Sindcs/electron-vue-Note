@@ -18,7 +18,7 @@
     <div ref="noteListCon" class="noteListCon" >
       <scroll-page v-if="itemList.length !== 0" :isLoad="isLoad" :isGettingData="isGetPage" @scrollGetData="getNewData" style="height: 100%">
         <div slot="scrollContent">
-          <note-item slot="item" :firstUuid="itemList[0].uuid" :item="item"></note-item>
+          <note-item slot="item" v-for="item in itemList" :firstUuid="itemList[0].uuid" :item="item" :key="item.uuid"></note-item>
         </div>
       </scroll-page>
     </div>
@@ -179,7 +179,7 @@
       router () {
         if (this.itemList && this.itemList.length) {
           let item = this.itemList[0]
-          this.$router.push({name: 'nodeDetail', params: {uuid: item.cataLogId}})
+          this.$router.push({name: 'nodeDetail', params: {uuid: item.uuid, isEditor: true}})
         }
         this.$emit('setCurrentList', this.itemList)
       },

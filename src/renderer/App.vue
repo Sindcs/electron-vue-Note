@@ -11,5 +11,10 @@
 </script>
 
 <style>
-  /* CSS */
+ body{
+   min-width: 800px;
+ }
+ #app {
+   min-width: 800px;
+ }
 </style>

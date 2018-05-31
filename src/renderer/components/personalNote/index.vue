@@ -3,7 +3,7 @@
     <div class="noteLeft">
       <note-item-list></note-item-list>
     </div>
-    <div class="noteRight" v-if="list.length">
+    <div class="noteRight">
       <router-view></router-view>
     </div>
   </div>
@@ -33,6 +33,7 @@
     display:-webkit-box;
     float: left;
     height: 100%;
+    width: calc(100% - 280px)
   }
   .noteLeft {
     height: 100%;
@@ -40,6 +41,7 @@
   }
   .noteRight{
     height: 100%;
+    width: calc(100% - 290px);
     -webkit-box-flex:1;
   }
 </style>

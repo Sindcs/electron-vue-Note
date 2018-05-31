@@ -64,7 +64,39 @@
         'currentSelectCatalogItem',
       ])
     },
+    mounted () {
+      this.$nextTick(() => {
+        var val = this.$route.params.uuid
+        this.uuid = val
+        this.saveContent = ''
+        this.isFocus = false
+        this.kindFocused = false
+        this.getDetial(val)
+      })
+    },
+    watch: {
+      '$route.params.uuid': function (val) {
+        this.uuid = val
+        this.saveContent = ''
+        this.isFocus = false
+        this.kindFocused = false
+        this.getDetial(val)
+      }
+    },
     methods: {
+      // 获取一个笔记详细信息
+      getDetial (uuid) {
+        noteOperatore.getOneNote(uuid).then(res => {
+          this.title = res.title.trim()
+          this.content = util.isNullOrEmpty(res.content) ? '' : res.content
+          this.item = res
+          this.item.content = this.content
+          this.tagList = res.tags
+          this.cataLogName = res.cataLogName
+        }).catch(err => {
+          log.writeErr(`noteEditor getDetial error: ${err}`)
+        })
+      },
       kindRead (editor) {
         this.kindEditor = editor
       },

@@ -70,5 +70,32 @@ export default {
             }
           }
         })
+    },
+    insertOrUpdateContentIndex: (uuid, cataLogId, content) => {
+      return new Promise((resolve, reject) => {
+        documentContentIndex.findOne(uuid, (err, count) => {
+          if (err) {
+            reject(err)
+          } else {
+            if (count) {
+              documentContentIndex.update(content, uuid, cataLogId, (err) => {
+                if (err) {
+                  reject(err)
+                } else {
+                  resolve({})
+                }
+              })
+            } else {
+              documentContentIndex.insert(uuid, content, cataLogId, (err) => {
+                if (err) {
+                  reject(err)
+                } else {
+                  resolve({})
+                }
+              })
+            }
+          }
+        })
+      })
     }
 }

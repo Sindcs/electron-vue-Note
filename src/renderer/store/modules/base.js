@@ -4,7 +4,8 @@
 import * as types from '../mutation-types'
 const state = {
   newCataLogParam: {},
-  currentSelectCatalogItem: {}
+  currentSelectCatalogItem: {},
+  searchInfo: {}
 }
 
 const mutations = {

@@ -13,7 +13,7 @@ if (remote) {
 } else {
   app = require('electron').app
 }
-let hostPath = process.cwd() + '\\app\\dist'
+let hostPath = process.cwd()
 let electronPath = 'node_modules\\electron-prebuilt\\dist\\electron.exe'
 let backworkerPath = 'app\\dist\\backworker.js'
 if (process.env.NODE_ENV !== 'development') {

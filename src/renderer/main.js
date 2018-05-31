@@ -8,6 +8,7 @@ import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk'
 import modal from './components/base/modal.vue'
 import dbinit from './dal/dbinit'
+import filters from '../filters'
 
 dbinit.initDatabase()
 dbinit.initTable().catch(err => {
@@ -62,6 +63,11 @@ Vue.prototype.$alert = alert
 Vue.prototype.$confirm = confirm
 
 Vue.component('modal', {...modal})
+
+// 注册filter
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, filters[key])
+})
 
 import './assets/css/iconfont/iconfont.css'
 import './assets/css/main.css'

@@ -16,7 +16,7 @@ export default new Router({
           component: require('@/components/personalNote/index').default,
           children: [
             {
-              path: '/nodeDetail/:uuid',
+              path: '/nodeDetail/:uuid/:isEditor',
               name: 'nodeDetail',
               component: require('@/components/personalNote/noteEditor').default
             }

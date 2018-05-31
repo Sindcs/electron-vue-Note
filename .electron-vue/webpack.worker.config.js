@@ -23,7 +23,7 @@ let whiteListedModules = ['vue']
 let workerConfig = {
   devtool: '#cheap-module-eval-source-map',
   entry: {
-    renderer: path.join(__dirname, '../src/backworker/index.js')
+    worker: path.join(__dirname, '../src/backworker/index.js')
   },
   externals: [
     ...Object.keys(dependencies || {}).filter(d => !whiteListedModules.includes(d))

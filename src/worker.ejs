@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Dt</title>
-  <% if (htmlWebpackPlugin.options.appModules) { %>
-  <!-- Add `app/node_modules` to global paths so `require` works properly in development -->
-  <script>
-    require('module').globalPaths.push('<%= htmlWebpackPlugin.options.appModules.replace(/\\/g, '\\\\') %>')
-  </script>
+  <% if (htmlWebpackPlugin.options.nodeModules) { %>
+    <!-- Add `node_modules/` to global paths so `require` works properly in development -->
+    <script>
+      require('module').globalPaths.push('<%= htmlWebpackPlugin.options.nodeModules.replace(/\\/g, '\\\\') %>')
+    </script>
   <% } %>
 </head>
 <body id="workerBody">
@@ -17,6 +17,9 @@
       <div style="overflow: hidden"></div>
     </div>
   </div>
+  <script>
+    if (process.env.NODE_ENV !== 'development') window.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\')
+  </script>
 </div>
 <!-- webpack builds are automatically injected -->
 </body>

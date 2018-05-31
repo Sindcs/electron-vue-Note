@@ -125,6 +125,7 @@ export default {
         if (rs) {
           note.cataLogType = rs.type
           await conn.serialize(async () => {
+            console.log('begin')
             conn.run('BEGIN')
             conn.run(`INSERT INTO documentcontent (uuid, content) 
           values(?,?)`,
@@ -339,6 +340,7 @@ export default {
             console.log(err)
           }
           db.serialize(() => {
+            console.log('begin')
             db.run('BEGIN')
             db.run(`UPDATE documentcontent SET content = ?  
           WHERE uuid = ?`,
