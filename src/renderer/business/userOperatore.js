@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/7/6.
- */
 import userDal from '../dal/user'
 
 export default{

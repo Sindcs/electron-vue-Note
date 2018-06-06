@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/5/14.
- */
 import catalogdal from '../dal/catalogdal'
 import documentdal from '../dal/documentdal'
 import appConfig from '../config/appConfig'

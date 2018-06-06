@@ -1,7 +1,3 @@
-/**
- * Created by Sind on 2017/4/27.
- * note
- */
 import sqlite from '../foundation/sqlitdb'
 import documentdal from '../dal/documentdal'
 import tagdal from '../dal/tag'

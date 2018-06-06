@@ -1,5 +1,4 @@
 /**
- * Created by Sind on 2017/10/29.
  */
 import sqlite from '../foundation/sqlitdb'
 import log from '../foundation/log'

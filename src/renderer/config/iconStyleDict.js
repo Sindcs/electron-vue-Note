@@ -1,23 +1,5 @@
-/**
- * Created by ding on 2017/8/10.
- */
 var enumTypes = require('../model/enumtype')
 var dict = {
-  documentTypeIcon: [
-    {key: enumTypes.documentType.word + 'I', value: 'word'},
-    {key: enumTypes.documentType.caj + 'I', value: 'caj'},
-    {key: enumTypes.documentType.pdf + 'I', value: 'pdf'},
-    {key: enumTypes.documentType.excel + 'I', value: 'exell'},
-    {key: enumTypes.documentType.html + 'I', value: 'html'},
-    {key: enumTypes.documentType.image + 'I', value: 'image'},
-    {key: enumTypes.documentType.video + 'I', value: 'video'},
-    {key: enumTypes.documentType.audio + 'I', value: 'video'},
-    {key: enumTypes.documentType.projectDoc + 'I', value: ''},
-    {key: enumTypes.documentType.txt + 'I', value: 'other'},
-    {key: enumTypes.documentType.other + 'I', value: 'undefined'},
-    {key: enumTypes.documentType.ppt + 'I', value: 'ppt'},
-    {key: enumTypes.documentType.code + 'I', value: 'code'}
-  ],
   catalogTypeIcon: [
     {key: enumTypes.cataLogType.achievement + 'I', value: 'cataIcon iconfont icon-boshimao-copy'},
     {key: enumTypes.cataLogType.literatureDatum + 'I', value: 'cataIcon iconfont icon-ziliao1'},

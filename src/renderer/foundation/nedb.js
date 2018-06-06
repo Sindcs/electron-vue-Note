@@ -1,5 +1,4 @@
 /**
- * Created by Sind on 2017/4/26.
  */
 import config from '../config/index'
 var Datastore = require('nedb-core')

@@ -1,6 +1,3 @@
-/**
- * Created by Administrator on 2018/5/10.
- */
 import connection from '../common/mysql'
 //var connection = require('../common/mysql').connection
 var fs = require('fs')

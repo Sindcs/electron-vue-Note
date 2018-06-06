@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/7/4.
- */
 //const uuidV1 = require('uuid')
 var $ = require('jquery')
 var documentType = require('../model/enumtype').documentType

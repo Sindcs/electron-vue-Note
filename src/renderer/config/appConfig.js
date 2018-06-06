@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/6/8.
- */
 import nodeStrorage from '../foundation/localstorage'
 import config from '../config/index'
 import {themeType} from '../assets/themes/index'

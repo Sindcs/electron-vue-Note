@@ -1,5 +1,4 @@
 /**
- * Created by Sind on 2017/4/26.
  * 目录
  */
 import log from '../foundation/log'

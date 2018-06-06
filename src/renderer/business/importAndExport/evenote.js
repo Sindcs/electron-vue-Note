@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/12/12.
- */
 import noteOperatore from '../../business/noteOperatore'
 import resourcedal from '../../dal/resource'
 import util from '../../common/util'

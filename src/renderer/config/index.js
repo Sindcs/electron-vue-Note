@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/4/8.
- */
 // 下面处理使得可以被render与main同时调用
 
 import userOperatore from '../business/userOperatore'

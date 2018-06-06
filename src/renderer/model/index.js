@@ -10,18 +10,6 @@ const tag = {
   dateCreated: Date.now() // 创建时间
 }
 
-//  用户
-const user = {
-  uuid: '32', // 主键
-  name: 'test', // 名称
-  fullName: 'test', // 全名
-  dateCreated: Date.now(), // 创建时间
-  email: '', // 电子邮件
-  notebookCount: 1, // 个人笔记数
-  literatureCount: 1, // 论文文献数
-  documentMaterial: 1 // 文档资料数
-}
-
 // 资源类型
 const sourceType = {
   key,
@@ -110,76 +98,3 @@ const note = {
   cataLogId // 目录id
 }
 
-// 文档资源
-// word ppt pdf
-const documentOffice = {
-  uuid,
-  title,
-  documentType,
-  author,
-  tags,
-  upateTime,
-  sourse,
-  filePath, // 文档位置
-  downloadPath, // 文档下载位置
-
-  event, // 事件
-  submitUser, // 提交人
-  docMenu, // 文档目录
-  isChanged,
-  isDocSync,
-  content,
-  dateCreated,
-  cataLogId, // 目录id,
-  cataLogType,
-  uniqueId, // 文件全局唯一值
-  remark // 备注
-}
-
-// others image video audio
-const documentOthers = {
-  uuid,
-  title,
-  documentType,
-  author,
-  tags,
-  upateTime,
-  sourse,
-  filePath, // 文档位置
-  downloadPath, // 文档下载位置
-
-  event, // 事件
-  submitUser, // 提交人
-  isChanged,
-  isDocSync,
-  content,
-  dateCreated,
-  cataLogId, // 目录id,
-  cataLogType,
-  uniqueId, // 文件全局唯一值
-  remark // 备注
-}
-
-// 群组文件
-const groupDocument = {
-  title, // 名称
-  creators, // 创建者
-  sourse, // 来源
-  updateTime, // 更新日期
-  lastEditor, // 最后编辑者
-
-  isCanEditor // 是否可编辑
-}
-
-const pdfMes = {
-  left,
-  top,
-  fontSize,
-  fontFamily,
-  text
-}
-
-const watcherPathInfo = {
-  path, // 路径
-  cataLogId // 目录id
-}

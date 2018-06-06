@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/6/27.
- */
 import util from '../common/util'
 var http = require('http')
 var https = require('https')

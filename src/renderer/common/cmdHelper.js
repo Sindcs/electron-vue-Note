@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/4/28.
- */
 import config from '../config/index'
 import util from '../common/util'
 

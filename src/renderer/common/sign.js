@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/7/6.
- */
 var crypto = require('crypto')
 
 export default {

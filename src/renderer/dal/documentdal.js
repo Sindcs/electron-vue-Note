@@ -1,5 +1,4 @@
 /**
- * Created by Sind on 2017/4/26.
  * 文档
  */
 import nedbs from '../foundation/nedb'

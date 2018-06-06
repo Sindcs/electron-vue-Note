@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/6/1.
- */
 import { remote } from 'electron'
 const dialog = remote.dialog
 

@@ -1,5 +1,4 @@
 /**
- * Created by Sind on 2017/4/17.
  * 数据库初始化
  */
 import log from '../foundation/log'

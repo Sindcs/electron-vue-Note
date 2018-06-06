@@ -1,7 +1,3 @@
-/**
- * Created by Sind on 2017/5/2.
- * 标签
- */
 import tagdal from '../dal/tag'
 import appConfig from '../config/appConfig'
 

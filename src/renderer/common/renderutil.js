@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/9/22.
- */
 import log from '../foundation/log'
 
 var navigator = window.navigator

@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/7/7.
- */
 var app = {}
 var remote = require('electron').remote
 if (remote) {

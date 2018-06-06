@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/11/9.
- */
 import { ipcRenderer, remote } from 'electron'
 import config from '../config/index'
 import nedbs from '../foundation/nedb'

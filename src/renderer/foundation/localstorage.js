@@ -1,5 +1,4 @@
 /**
- * Created by Sind on 2017/6/15.
  */
 import config from '../config/index'
 import log from '../foundation/log'

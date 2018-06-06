@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/10/29.
- */
 import tagdocumentdal from '../dal/tag_documentdal'
 
 export default {

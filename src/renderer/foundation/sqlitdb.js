@@ -1,5 +1,4 @@
 /**
- * Created by Sind on 2017/3/27.
  * the main sqlite3 db
  */
 

@@ -1,6 +1,3 @@
-/**
- * Created by Sind on 2017/5/27.
- */
 import documentdal from '../dal/documentdal'
 import tagdal from '../dal/tag'
 import tagdocumentdal from '../dal/tag_documentdal'

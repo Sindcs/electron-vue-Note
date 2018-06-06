@@ -1,7 +1,3 @@
-/**
- * Created by Sind on 2017/3/24.
- * the sys Log
- */
 const log4js = require('log4js')
 const fs = require('fs')
 const path = require('path')
