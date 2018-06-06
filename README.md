@@ -1,5 +1,7 @@
 # electron-vue-note
 
+![image](https://github.com/Sindcs/electron-vue-Note/raw/master/screenshots/main.png)
+
 > A note base on electron-vue
 
 #### Build Setup
