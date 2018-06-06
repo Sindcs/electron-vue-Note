@@ -96,6 +96,21 @@ export default {
       }
     )
   },
+  // 获取一个文件夹的所有子目录
+  getOneAllFirstChild: (uuid, callback) => {
+    let selectSql = 'SELECT * FROM cataLog WHERE parentCataLogId = ? AND isMonitored = 0 ORDER BY dateCreated'
+    db.all(selectSql,
+      [uuid], (err, rows) => {
+        if (err) {
+          console.log(err)
+          log.writeErr(err)
+          callback(err, null)
+        } else {
+          callback(null, rows)
+        }
+      }
+    )
+  },
   getOneChildCount: (uuid, callback) => {
     db.all('SELECT count(1) as count FROM cataLog WHERE parentCataLogId = ?',
       [uuid], (err, row) => {

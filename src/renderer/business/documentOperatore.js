@@ -97,5 +97,250 @@ export default {
           }
         })
       })
-    }
+    },
+    addOneTag: (uuid, name) => {
+      let tag = {name: name}
+      return new Promise((resolve, reject) => {
+        try {
+          tagdal.getOneByName(name, (err, row) => {
+            if (err) {
+              reject(err)
+            }
+            let tagUuid = util.getUuid()
+            if (!row) {
+              tag.uuid = tagUuid
+              tagdal.insert(tag, (err) => {
+                if (err) {
+                  reject(err)
+                } else {
+                  tagdocument.add(uuid, tagUuid, (err) => {
+                    if (err) {
+                      reject(err)
+                    } else {
+                      resolve(tag)
+                    }
+                  })
+                }
+              })
+            } else {
+              tagdocument.getOneRelation(uuid, row.uuid, (err, count) => {
+                if (err) {
+                  reject(err)
+                } else {
+                  if (count === 0) {
+                    tagdocument.add(uuid, row.uuid, (err) => {
+                      if (err) {
+                        reject(err)
+                      } else {
+                        resolve(row)
+                      }
+                    })
+                  } else {
+                    resolve()
+                  }
+                }
+              })
+            }
+          })
+        } catch (err) {
+          reject(err)
+        }
+      })
+    },
+    // 删除一个标签关系
+    deleteOneTag: (uuid, tagId) => {
+      return new Promise((resolve, reject) => {
+        tagdocument.delete(uuid, tagId, (err, row) => {
+          if (err) {
+            reject(err)
+          } else {
+            if (row) {
+              appConfig.setDeleteInfo({
+                deleteSourceType: enumType.deleteSourceType.tagDocumentRelation,
+                uuid: row.uuid
+              })
+            }
+            resolve(1)
+          }
+        })
+      })
+    },
+    // 彻底删除所有id的文档
+  deleteAllIds: (uuids, isMonitored) => {
+    return new Promise((resolve, reject) => {
+      db.serialize(function () {
+        let inStr = util.formatArrayToInStr(uuids)
+        db.run('BEGIN')
+        db.run(`DELETE FROM documentcontent
+        WHERE uuid in ${inStr}`,
+          [],
+          (err) => {
+            if (err) {
+              db.run('ROLLBACK')
+              reject(err)
+            } else {
+              documentdal.deleteAllIds(uuids, (err, num) => {
+                if (err) {
+                  db.run('ROLLBACK')
+                  reject(err)
+                } else {
+                  db.run(`DELETE FROM document_document WHERE documentId in ${inStr} or rdocumentId in ${inStr}`,
+                    [],
+                    (err) => {
+                      if (err) {
+                        db.run('ROLLBACK')
+                        reject(err)
+                      } else {
+                        db.run(`DELETE FROM favorites WHERE documentId in ${inStr}`,
+                          [],
+                          (err) => {
+                            if (err) {
+                              db.run('ROLLBACK')
+                              reject(err)
+                            } else {
+                              db.run(`DELETE FROM resource WHERE ownerId in ${inStr}`,
+                                [],
+                                (err) => {
+                                  if (err) {
+                                    db.run('ROLLBACK')
+                                    reject(err)
+                                  } else {
+                                    db.run(`DELETE FROM tag_document WHERE documentId in ${inStr}`,
+                                      [],
+                                      (err) => {
+                                        if (err) {
+                                          db.run('ROLLBACK')
+                                          reject(err)
+                                        } else {
+                                          db.run(`DELETE FROM contentIndex WHERE uuid in ${inStr}`,
+                                            [],
+                                            (err) => {
+                                              if (err) {
+                                                db.run('ROLLBACK')
+                                                reject(err)
+                                              } else {
+                                                db.run('COMMIT')
+                                                currentReadOperatore.clearCurrentReadByUuids(uuids).then().catch(err => {
+                                                  console.log(err)
+                                                })
+                                                if (!isMonitored) {
+                                                  uuids.forEach(val => {
+                                                    appConfig.setDeleteInfo({
+                                                      deleteSourceType: enumType.deleteSourceType.document,
+                                                      uuid: val
+                                                    })
+                                                  })
+                                                }
+                                                resolve()
+                                              }
+                                            })
+                                        }
+                                      })
+                                  }
+                                })
+                            }
+                          })
+                      }
+                    })
+                }
+              })
+            }
+          })
+      })
+    })
+  },
+  // 删除某个目录下的所有文档
+  deleteCatalogAllDocument: (catalogId, isMonitored) => {
+    return new Promise((resolve, reject) => {
+      documentdal.getUuidsByCataLogId(catalogId, null, async (err, res) => {
+        if (err) {
+          reject(err)
+        } else {
+          let uuids = res.map(val => {
+            return val.uuid
+          })
+          if (!uuids.length) {
+            resolve()
+            return
+          }
+          db.serialize(function () {
+            let inStr = util.formatArrayToInStr(uuids)
+            db.run('BEGIN')
+            db.run(`DELETE FROM documentcontent
+            WHERE uuid in ${inStr}`,
+              [],
+              (err) => {
+                if (err) {
+                  db.run('ROLLBACK')
+                  reject(err)
+                } else {
+                  documentdal.deleteaByCataLogId(catalogId, (err, num) => {
+                    if (err) {
+                      db.run('ROLLBACK')
+                      reject(err)
+                    } else {
+                      db.run(`DELETE FROM document_document WHERE documentId in ${inStr} or rdocumentId in ${inStr}`,
+                        [],
+                        (err) => {
+                          if (err) {
+                            db.run('ROLLBACK')
+                            reject(err)
+                          } else {
+                            db.run(`DELETE FROM favorites WHERE documentId in ${inStr}`,
+                              [],
+                              (err) => {
+                                if (err) {
+                                  db.run('ROLLBACK')
+                                  reject(err)
+                                } else {
+                                  db.run(`DELETE FROM resource WHERE ownerId in ${inStr}`,
+                                    [],
+                                    (err) => {
+                                      if (err) {
+                                        db.run('ROLLBACK')
+                                        reject(err)
+                                      } else {
+                                        db.run(`DELETE FROM tag_document WHERE documentId in ${inStr}`,
+                                          [],
+                                          (err) => {
+                                            if (err) {
+                                              db.run('ROLLBACK')
+                                              reject(err)
+                                            } else {
+                                              db.run(`DELETE FROM contentIndex WHERE uuid in ${inStr}`,
+                                              [],
+                                                (err) => {
+                                                  if (err) {
+                                                    db.run('ROLLBACK')
+                                                    reject(err)
+                                                  } else {
+                                                    db.run('COMMIT')
+                                                    uuids.forEach(val => {
+                                                      if (!isMonitored) {
+                                                        appConfig.setDeleteInfo({
+                                                          deleteSourceType: enumType.deleteSourceType.document,
+                                                          uuid: val
+                                                        })
+                                                      }
+                                                    })
+                                                    resolve()
+                                                  }
+                                                })
+                                            }
+                                          })
+                                      }
+                                    })
+                                }
+                              })
+                          }
+                        })
+                    }
+                  })
+                }
+              })
+          })
+        }
+      })
+    })
+  }
 }

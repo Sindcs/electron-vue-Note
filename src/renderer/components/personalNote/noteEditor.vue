@@ -72,6 +72,7 @@
         this.isFocus = false
         this.kindFocused = false
         this.getDetial(val)
+        this.cataLogName = this.currentSelectCatalogItem.name
       })
     },
     watch: {

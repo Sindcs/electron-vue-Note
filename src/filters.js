@@ -48,6 +48,9 @@ export default {
     return staticConfig.imageStoreIp + photo
   },
   getNoteImage: function (url) {
+    if (!url) {
+      return ''
+    }
     let basePath = ''
     if (process.env.NODE_ENV !== 'development') {
       basePath = '..\\..\\'

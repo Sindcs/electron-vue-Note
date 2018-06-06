@@ -10,7 +10,7 @@
             <p class="time">{{showItem.dateUpdated | getTime}}</p>
             <p v-html="showItem.abstracts"></p>
           </div>
-          <div class="imageDes" v-show="showItem.imgSrc">
+          <div class="imageDes" v-if="showItem.imgSrc">
             <img :src="showItem.imgSrc | getNoteImage"/>
           </div>
         </div>

@@ -1,5 +1,5 @@
 <template>
-  <li class="menu-li">
+  <li class="menu-li" v-if="!isDelete">
     <a :style="item.styleClass" @contextmenu.prevent="newMenu" @click.self="router">
       <span :class="isShow ? 'el-tree-node__expand-icon el-icon-caret-right expanded':'el-tree-node__expand-icon el-icon-caret-right'" v-if="item.childList && item.childList.length" @click.self="explain"></span>
       <span class ="nav-label"  @click="selectOne(item)">{{item.name}}</span>
@@ -16,6 +16,8 @@
 <script type="text/ecmascript-6">
   import * as types from '../../store/mutation-types'
   import newCataLogDialog from '../cataLog/newCataLogDialog.vue'
+  import cataLogOperatore from '../../business/cataLogOperatore'
+  import documentOperatore from '../../business/documentOperatore'
 
   const { remote } = require('electron')
   const { Menu, MenuItem } = remote
@@ -26,6 +28,7 @@
     },
     data () {
       return {
+        isDelete: false,
         isShowAdd: false,
         isEdit: false,
         isShow: false
@@ -33,7 +36,8 @@
     },
     props: ['propItem'],
     computed: {
-      item: function () {
+      item: {
+        get: function () {
         return {
           uuid: this.propItem.uuid,
           name: this.propItem.name,
@@ -43,6 +47,10 @@
           cataLogChain: this.propItem.cataLogChain,
           type: this.propItem.type
         }
+      },
+      set: function (newval) {
+         return newval
+      }
       }
     },
     methods: {
@@ -53,6 +61,7 @@
         this.$store.commit(types.CHANGE_CURRENTSELECT_CATLOGITEM, {
           isShow: false,
           uuid: this.item.uuid,
+          name: this.item.name,
           parentInfo: this.item
         })
       },
@@ -66,6 +75,12 @@
           }
         }))
         noteRightMenu.append(new MenuItem({
+          label: '创建笔记',
+          click: () => {
+            this.$router.push({name: 'newNode', params:{ isEditor: true }})
+          }
+        }))
+         noteRightMenu.append(new MenuItem({
           label: '修改目录名称',
           click: () => {
             this.isShowAdd = true
@@ -73,9 +88,44 @@
           }
         }))
         noteRightMenu.append(new MenuItem({
-          label: '创建笔记',
+          label: '删除目录',
           click: () => {
-            this.$router.push({name: 'newNode', params:{ isEditor: true }})
+            this.$confirm({
+              message: '确认删除该目录?',
+              onOk: () => {
+                cataLogOperatore.deleteCatalog(this.item.uuid).then(() => {
+                  this.$alert({
+                    message: "删除成功！"
+                  })
+                  this.isDelete = true
+               }).catch(err => {
+                  this.$alert({
+                    type: 'error',
+                    message: `删除失败：该目录下存在笔记或子目录`
+                  })
+                  console.log(err)
+                })
+              }
+            })
+          }
+        }))
+        noteRightMenu.append(new MenuItem({
+          label: '清空目录',
+          click: () => {
+            this.$confirm({
+              message: '确定清空该目录?',
+              onOk: () => {
+                documentOperatore.deleteCatalogAllDocument(this.item.uuid, false).then(() => {
+                  this.$alert({
+                    message: '清楚完成！'
+                  })
+                }).catch(err => {})
+                this.$alert({
+                  message: '清空出现错误！',
+                  type: 'error'
+                })
+              }
+            })
           }
         }))
         noteRightMenu.popup(remote.getCurrentWindow())

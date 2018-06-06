@@ -9,6 +9,7 @@
 <script type="text/ecmascript-6">
   import sdMenu from '../base/menu.vue'
   import cataLogOperator from '../../business/cataLogOperatore'
+  import {cataLogType} from '../../model/enumtype'
 
   export default {
     components: {
@@ -22,7 +23,8 @@
             name: '笔记本',
             childCount: 1,
             cataLogChain: '',
-            childList: []
+            childList: [],
+            type: cataLogType.personalNote
           }
         ]
       }

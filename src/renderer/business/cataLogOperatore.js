@@ -130,7 +130,7 @@ export default {
   // 删除某一个目录 (callback 状态码) 有待给为promise
   deleteCatalog: (uuid) => {
     return new Promise((resolve, reject) => {
-      catalogdal.getOneAllChild(uuid, false, (innerUuid, rows) => {
+      catalogdal.getOneAllFirstChild(uuid, (innerUuid, rows) => {
         if (rows.length > 0) {
           reject(enumType.statusCode.hasChild)
         } else {
