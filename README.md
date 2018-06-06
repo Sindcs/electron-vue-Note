@@ -1,4 +1,4 @@
-# elevue-note
+# electron-vue-note
 
 > A note base on electron-vue
 
