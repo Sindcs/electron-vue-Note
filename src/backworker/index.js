@@ -1,5 +1,4 @@
 /**
- * Created by Sind on 2017/12/4.
  */
 import { ipcRenderer, remote } from 'electron'
 import renderutil from '../renderer/common/renderutil'

@@ -280,8 +280,6 @@
     width:100%;
     text-align: left;
   }
-  .nodeheard input{
-  }
   .noteMe {
     float:left;
     display:inline-block;
