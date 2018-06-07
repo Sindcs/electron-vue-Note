@@ -95,7 +95,7 @@
             if (noteItem && nodeItemDom) {
               let dom = nodeItemDom.querySelector('.noteItem')
               if (dom) {
-                dom.setAttribute('style', 'background:rgba(0, 0, 0, 0.04);')
+                dom.setAttribute('style', 'background:#E6E6E6;')
                 this.lastSelectItemDom = dom
               }
             }

@@ -1,6 +1,6 @@
 <template>
   <li class="menu-li" v-if="!isDelete">
-    <a :style="item.styleClass" @contextmenu.prevent="newMenu" @click.self="router">
+    <a :style="item.styleClass" @contextmenu.prevent="newMenu" @click.self="router" :class="currentSelectCatalogItem.uuid === item.uuid ? 'selected':''">
       <span :class="isShow ? 'el-tree-node__expand-icon el-icon-caret-right expanded':'el-tree-node__expand-icon el-icon-caret-right'" v-if="item.childList && item.childList.length" @click.self="explain"></span>
       <span class ="nav-label"  @click="selectOne(item)">{{item.name}}</span>
     </a>
@@ -18,6 +18,7 @@
   import newCataLogDialog from '../cataLog/newCataLogDialog.vue'
   import cataLogOperatore from '../../business/cataLogOperatore'
   import documentOperatore from '../../business/documentOperatore'
+  import {mapGetters} from 'vuex'
 
   const { remote } = require('electron')
   const { Menu, MenuItem } = remote
@@ -36,6 +37,9 @@
     },
     props: ['propItem'],
     computed: {
+      ...mapGetters([
+        'currentSelectCatalogItem',
+      ]),
       item: {
         get: function () {
         return {
@@ -78,6 +82,19 @@
           label: '创建笔记',
           click: () => {
             this.$router.push({name: 'newNode', params:{ isEditor: true }})
+          }
+        }))
+         noteRightMenu.append(new MenuItem({
+          label: '修改目录名称',
+          click: () => {
+            this.isShowAdd = true
+            this.isEdit = true
+          }
+        }))
+         noteRightMenu.append(new MenuItem({
+          label: '导入evenote笔记',
+          click: () => {
+            
           }
         }))
          noteRightMenu.append(new MenuItem({
@@ -170,6 +187,9 @@
         font-weight: 300;
         padding: 2px 0px;
      }
+   }
+   .selected {
+     background-color: #4A5D6B
    }
  }
 </style>

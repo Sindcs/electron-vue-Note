@@ -82,12 +82,12 @@
 .noteItem {
   position: relative;
   box-sizing: border-box;
-  width: 100%;
-  height: 130px;
+  margin: 1px 4px;
+  height: 100px;
   padding: 8px 15px;
   overflow: hidden;
+  border-bottom: rgba(0,0,0,0.12) solid 1px;
   cursor: pointer;
-  border:2px solid transparent;
   line-height:20px;
   color: #555;
   .icon3 {
@@ -95,11 +95,11 @@
     top: 2px;
     right: 3px;
     z-index: 2;
-    font-size: 15px;
+    font-size: 11px;
     color: orange;
   }
   &:hover {
-    background: rgba(0,0,0,0.03);
+    background: #E6E6E6;
   }
 }
   .detailCon{
@@ -113,10 +113,11 @@
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
       flex:1;
-      height:70px;
-      font-size:12px;
+      height:50px;
+      font-family: inherit;
+      font-size:10px;
       letter-spacing:0.2px;
-      line-height:24px;
+      line-height:18px;
       color:#657180;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -130,21 +131,22 @@
     left: 0;
     top:2px;
     margin-right:4px;
-    font-size:18px;
+    font-size:15px;
   }
 }
 .wordDes .time{
   margin-bottom: 3px;
   line-height:14px;
-  font-size:12px;
+  font-size:11px;
   color:#aaa;
 }
 .wordDes .title{
   display: block;
   width:100%;
-  height:18px;
+  height:15px;
+  font-size: 13px;
   padding-top:5px;
-  line-height:18px;
+  line-height:15px;
   margin-bottom:5px;
   color:#464c5b;
   text-indent:20px;

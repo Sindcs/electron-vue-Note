@@ -37,11 +37,11 @@
   }
   .noteLeft {
     height: 100%;
-    width: 290px;
+    width: 350px;
   }
   .noteRight{
     height: 100%;
-    width: calc(100% - 290px);
+    width: calc(100% - 350px);
     -webkit-box-flex:1;
   }
 </style>
