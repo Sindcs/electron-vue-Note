@@ -56,7 +56,7 @@
     }
   },
   "dependencies": {
-    "axios": "^0.16.1",
+    "axios": "^0.18.1",
     "electron-debug": "^1.5.0",
     "element-ui": "^2.3.7",
     "getmac": "^1.4.1",
